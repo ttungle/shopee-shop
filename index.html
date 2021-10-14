@@ -1,0 +1,2167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/normalize.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="icon" href="./assets/img/favicon.ico/shopee_icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.4/css/all.min.css">
+    <title>LTT Shop</title>
+</head>
+
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="grid">
+                <nav class="header__navbar">
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item"><a href="#"
+                                class="header__navbar-item-link header__navbar--separate">Kênh Người Bán</a></li>
+                        <li class="header__navbar-item"><a href="#"
+                                class="header__navbar-item-link header__navbar--separate">Trở Thành Người Bán
+                                Shopee</a></li>
+                        <li class="header__navbar-item header__navbar-link--hover">
+                            <a href="#" class="header__navbar-item-link header__navbar--separate">
+                                Tải ứng dụng
+                            </a>
+
+                            <!-- Header QR code -->
+                            <div class="header__qr-container">
+                                <div class="header__qr-container-qrcode">
+                                    <img src="./assets/img/header/qr_code/header_qrcode.png" alt="QR code"
+                                        class="header__qr-container-qrcode-img">
+                                </div>
+
+                                <div class="header__qr-container-apps">
+                                    <a href="https://apps.apple.com/vn/app/id959841449" target="blank"><img
+                                            src="./assets/img/header/qr_code/app_store.png" alt="App Store"
+                                            class="header__qr-container-apps-img"></a>
+                                    <a href="https://play.google.com/store/apps/details?id=com.shopee.vn&hl=vi&gl=US"
+                                        target="blank"><img src="./assets/img/header/qr_code/google_play.png"
+                                            alt="Google Play" class="header__qr-container-apps-img"></a>
+                                    <a href="#"><img src="./assets/img/header/qr_code/app_gallery.png" alt="App Gallery"
+                                            class="header__qr-container-apps-img"></a>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="header__navbar-item header__navbar-item--prevent">
+                            <span class="header__navbar-no-link">Kết nối</span>
+                            <div class="header__navbar-icons">
+                                <a href="https://www.facebook.com/"
+                                    class="header__navbar-icon-link header__navbar-link--prevent" target="blank">
+                                    <i class="fab fa-facebook header__navbar-icon"></i>
+                                </a>
+                                <a href="https://www.instagram.com/"
+                                    class="header__navbar-icon-link header__navbar-link--prevent" target="blank">
+                                    <i class="fab fa-instagram header__navbar-icon"></i>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__navbar-link--hover"><a href="#"
+                                class="header__navbar-item-link">
+                                <i class="far fa-bell header__navbar-icon"></i>
+                                <span>Thông Báo</span>
+                            </a>
+                            <!-- Header Notification -->
+                            <div class="header__notify">
+                                <h3 class="header__notify-title">Thông Báo Mới Nhận</h3>
+
+                                <ul class="header-notify-content">
+                                    <li class="header-notify-content__item header-notify-content__item--not-viewed">
+                                        <a href="#" class="header-notify-content__item-link">
+                                            <img src="./assets/img/header/notification/header_notification_item_1.png"
+                                                alt="Notification" class="header-notify-content__item-img">
+                                            <div class="header-notify-content__item-text">
+                                                <h3 class="header-notify-content__item-title">Tặng bạn Voucher giảm đến
+                                                    70K</h3>
+                                                <p class="header-notify-content__item-desc">🔥 Áp dụng cho đơn từ 500K
+                                                    ⏳ Số lượng có hạn
+                                                    ⏰ Kiểm tra ví ngay!</p>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="header-notify-content__item">
+                                        <a href="#" class="header-notify-content__item-link">
+                                            <img src="./assets/img/header/notification/header_notification_item_2.jpg"
+                                                alt="Notification" class="header-notify-content__item-img">
+                                            <div class="header-notify-content__item-text">
+                                                <h3 class="header-notify-content__item-title">Tặng bạn mã Freeship đến
+                                                    40K</h3>
+                                                <p class="header-notify-content__item-desc">😍 Mã Freeship đơn bất kỳ
+                                                    sẵn trong ví!
+                                                    🎁️ Sản phẩm giá tốt sắp hết!
+                                                    🛒 Mua ngay kẻo lỡ!</p>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="header-notify-content__item">
+                                        <a href="#" class="header-notify-content__item-link">
+                                            <img src="./assets/img/header/notification/header_notification_item_3.png"
+                                                alt="Notification" class="header-notify-content__item-img">
+                                            <div class="header-notify-content__item-text">
+                                                <h3 class="header-notify-content__item-title">Đang có điều bất ngờ trong
+                                                    ví của bạn!</h3>
+                                                <p class="header-notify-content__item-desc">💥 Mã Hoàn đến 100K Xu cho
+                                                    đơn từ 150K
+                                                    🌈 Đã có sẵn trong ví voucher của bạn
+                                                    🔔 Hiệu lực: 0H 22/09/2021 - 23H59 22/09/2021
+                                                    👉 Số lượng có hạn - Dùng ngay bạn nhé!</p>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="header-notify-content__item">
+                                        <a href="#" class="header-notify-content__item-link">
+                                            <img src="./assets/img/header/notification/header_notification_item_3.png"
+                                                alt="Notification" class="header-notify-content__item-img">
+                                            <div class="header-notify-content__item-text">
+                                                <h3 class="header-notify-content__item-title">Voucher nóng hổi đừng vội
+                                                    bỏ qua!</h3>
+                                                <p class="header-notify-content__item-desc">💥 Mã Hoàn đến 100K Xu đơn
+                                                    150K
+                                                    🌈 Đã có sẵn trong ví voucher của bạn
+                                                    🔔 Hiệu lực: 0H 19/09/2021 - 23H59 25/09/2021
+                                                    👉 Số lượng có hạn - Dùng ngay bạn nhé!</p>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="header-notify-content__item">
+                                        <a href="#" class="header-notify-content__item-link">
+                                            <img src="./assets/img/header/notification/header_notification_item_2.jpg"
+                                                alt="Notification" class="header-notify-content__item-img">
+                                            <div class="header-notify-content__item-text">
+                                                <h3 class="header-notify-content__item-title">Tặng bạn mã freeship đến
+                                                    40K</h3>
+                                                <p class="header-notify-content__item-desc">😍 Mã Freeship đơn bất kỳ
+                                                    sẵn trong ví!
+                                                    🎁️ Sản phẩm giá tốt sắp hết!
+                                                    🛒 Mua ngay kẻo lỡ!</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                                <div class="header__notify-footer">
+                                    <a href="#" class="header__notify-btn">Xem tất cả</a>
+                                </div>
+                            </div>
+
+                            </a>
+                        </li>
+                        <li class="header__navbar-item"><a href="#" class="header__navbar-item-link">
+                                <i class="far fa-question-circle header__navbar-icon"></i>
+                                <span>Hỗ Trợ</span>
+                            </a></li>
+                        <!--  <li class="header__navbar-item header__navbar-register"><a href="#"
+                                class="header__navbar-item-link header__navbar--separate">Đăng Ký</a></li>
+                        <li class="header__navbar-item header__navbar-login"><a href="#"
+                                class="header__navbar-item-link">Đăng Nhập</a></li> -->
+
+                        <li class="header__navbar-item header__navbar-item-user-js header__navbar-link--hover">
+                            <a href="#" class="header__navbar-user-link header__navbar-item-link">
+                                <img src="./assets/img/header/avatar/Avatar.png" class="header__navbar-avatar">
+                                <span>Thanh Tung Le</span></a>
+
+                            <div class="header__navbar-user">
+                                <a href="#" class="header__navbar-user-item">Tài Khoản Của Tôi</a>
+                                <a href="#" class="header__navbar-user-item">Đơn Mua</a>
+                                <a href="#" class="header__navbar-user-item header__navbar-user-item--separate">Đăng
+                                    Xuất</a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- Header with Search -->
+                <div class="header-search">
+                    <div class="header-search__logo">
+                        <a href="" class="header-search__logo-link">
+                            <img src="./assets/img/header/search/shopee_logo.svg" alt="Shopee Logo"
+                                class="header-search__logo-img">
+                        </a>
+                    </div>
+
+                    <div class="header-search__box">
+                        <div class="header-search__box-container">
+                            <div class="header-search__box-wrap">
+                                <input type="text" placeholder="Tìm trong Shop này" class="header-search__box-input">
+
+                                <div class="header-search__history">
+                                    <h3 class="header-search__history-header">Lịch sử Tìm Kiếm</h3>
+                                    <ul class="header-search__history-list">
+                                        <li class="header-search__history-item"><a href="#">Ohui</a></li>
+                                        <li class="header-search__history-item"><a href="#">Keycap</a></li>
+                                        <li class="header-search__history-item"><a href="#">Bàn phím cơ</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="header-search__dropdown">
+                                <div class="header-search__dropdown-selected">
+                                    <div class="header-search__dropdown-label">Trong Shop này</div>
+                                    <i class="fas fa-chevron-down header-search__dropdown-icon"></i>
+                                </div>
+
+                                <ul class="header-search__dropdown-options">
+                                    <li value="Trong Shop này"
+                                        class="header-search__dropdown-item header-search__dropdown-item--active">
+                                        <span>Trong Shop này</span>
+                                        <i class="fas fa-check header-search__dropdown-item-icon"></i>
+                                    </li>
+                                    <li value="Trong Shopee" class="header-search__dropdown-item">
+                                        <span>Trong Shopee</span>
+                                        <i class="fas fa-check header-search__dropdown-item-icon"></i>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="header-search__btn btn btn--primary">
+                                <i class="fas fa-search header-search__btn-icon"></i>
+                            </div>
+                        </div>
+
+                        <ul class="header-search__suggest">
+                            <li class="header-search__suggestions-item"><a href="#"
+                                    class="header-search__suggestions-item-link" data-toggle="dropdown">Bánh Trung
+                                    Thu</a></li>
+                            <li class="header-search__suggestions-item"><a href="#"
+                                    class="header-search__suggestions-item-link" data-toggle="dropdown">Áo Khoác</a>
+                            </li>
+                            <li class="header-search__suggestions-item"><a href="#"
+                                    class="header-search__suggestions-item-link" data-toggle="dropdown">Váy</a></li>
+                            <li class="header-search__suggestions-item"><a href="#"
+                                    class="header-search__suggestions-item-link" data-toggle="dropdown">Quần</a></li>
+                            <li class="header-search__suggestions-item"><a href="#"
+                                    class="header-search__suggestions-item-link" data-toggle="dropdown">Tai Nghe</a>
+                            </li>
+                            <li class="header-search__suggestions-item"><a href="#"
+                                    class="header-search__suggestions-item-link" data-toggle="dropdown">Bông Tẩy
+                                    Trang</a></li>
+                            <li class="header-search__suggestions-item"><a href="#"
+                                    class="header-search__suggestions-item-link" data-toggle="dropdown">Túi Xách
+                                    Nữ</a></li>
+                            <li class="header-search__suggestions-item"><a href="#"
+                                    class="header-search__suggestions-item-link" data-toggle="dropdown">Chân Váy</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="header-search__cart">
+                        <div class="header-search__cart-wrapper">
+                            <a href="#" class="header-search__cart-icon">
+                                <i class="fas fa-shopping-cart"></i>
+                                <div class="header-search__cart-notify">5</div>
+                            </a>
+
+                            <!-- active no cart: header-search__cart--no-cart
+                            active has carts: header-search__cart--has-cart-->
+                            <div class="header-search__cart-list header-search__cart--has-cart">
+                                <div class="header-search__cart-empty">
+                                    <div class="header-search__cart-empty-img"></div>
+                                    <p class="header-search__cart-empty-text">Chưa Có Sản Phẩm</p>
+                                </div>
+
+                                <div class="header-search__cart-product">
+                                    <h3 class="header-search__cart-product-header">Sản Phẩm Mới Thêm</h3>
+
+                                    <ul class="header-search__cart-product-list">
+                                        <li class="header-search__cart-product-item">
+                                            <img src="./assets/img/header/cart/product_1.jpg" alt="Sản Phẩm"
+                                                class="header-search__cart-product-img">
+                                            <div class="header-search__cart-product-info">
+                                                <div class="header-search__cart-product-head">
+                                                    <h5 class="header-search__cart-product-name">Gói Tẩy Tế Bào Da Chết
+                                                        OHUI làm trắng da - Ohui Clear Science Soft Peeling</h5>
+                                                    <div class="header__cart-product-price-wrap">
+                                                        <span class="header-search__cart-product-price">₫3.900</span>
+                                                        <span class="header-search__cart-product-times">x</span>
+                                                        <span class="header-search__cart-product-qnt">1</span>
+                                                    </div>
+                                                </div>
+                                                <div class="header-search__cart-product-body">
+                                                    <span class="header-search__cart-product-delete">Xóa</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="header-search__cart-product-item">
+                                            <img src="./assets/img/header/cart/product_2.jpg" alt="Sản Phẩm"
+                                                class="header-search__cart-product-img">
+                                            <div class="header-search__cart-product-info">
+                                                <div class="header-search__cart-product-head">
+                                                    <h5 class="header-search__cart-product-name">Kem Chống Nắng Ohui
+                                                        Dưỡng Trắng Cho Da Nhạy Cảm - Ohui Dayshield Perfect Sun Pro Red
+                                                    </h5>
+                                                    <div class="header__cart-product-price-wrap">
+                                                        <span class="header-search__cart-product-price">₫3.500</span>
+                                                        <span class="header-search__cart-product-times">x</span>
+                                                        <span class="header-search__cart-product-qnt">1</span>
+                                                    </div>
+                                                </div>
+                                                <div class="header-search__cart-product-body">
+                                                    <span class="header-search__cart-product-delete">Xóa</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="header-search__cart-product-item">
+                                            <img src="./assets/img/header/cart/product_3.jpg" alt="Sản Phẩm"
+                                                class="header-search__cart-product-img">
+                                            <div class="header-search__cart-product-info">
+                                                <div class="header-search__cart-product-head">
+                                                    <h5 class="header-search__cart-product-name">Gói kem chống nắng
+                                                        chống nhăn Whoo vàng - WHOO JIN HAE YOON WRINKLE SUN CREAM
+                                                        SPF50+/PA+++</h5>
+                                                    <div class="header__cart-product-price-wrap">
+                                                        <span class="header-search__cart-product-price">₫3.900</span>
+                                                        <span class="header-search__cart-product-times">x</span>
+                                                        <span class="header-search__cart-product-qnt">1</span>
+                                                    </div>
+                                                </div>
+                                                <div class="header-search__cart-product-body">
+                                                    <span class="header-search__cart-product-delete">Xóa</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="header-search__cart-product-item">
+                                            <img src="./assets/img/header/cart/product_4.jpg" alt="Sản Phẩm"
+                                                class="header-search__cart-product-img">
+                                            <div class="header-search__cart-product-info">
+                                                <div class="header-search__cart-product-head">
+                                                    <h5 class="header-search__cart-product-name">Gói kem dưỡng mắt Ohui
+                                                        tím, giảm nhăn thâm và bọng mắt - Ohui Age Recovery Eye Cream
+                                                    </h5>
+                                                    <div class="header__cart-product-price-wrap">
+                                                        <span class="header-search__cart-product-price">₫3.600</span>
+                                                        <span class="header-search__cart-product-times">x</span>
+                                                        <span class="header-search__cart-product-qnt">1</span>
+                                                    </div>
+                                                </div>
+                                                <div class="header-search__cart-product-body">
+                                                    <span class="header-search__cart-product-delete">Xóa</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="header-search__cart-product-item">
+                                            <img src="./assets/img/header/cart/product_5.jpg" alt="Sản Phẩm"
+                                                class="header-search__cart-product-img">
+                                            <div class="header-search__cart-product-info">
+                                                <div class="header-search__cart-product-head">
+                                                    <h5 class="header-search__cart-product-name">Gói serum tinh chất
+                                                        dưỡng trắng, căng bóng, chống lão hóa da - Ohui Prime Advancer
+                                                        Ampoule Serum</h5>
+                                                    <div class="header__cart-product-price-wrap">
+                                                        <span class="header-search__cart-product-price">₫3.500</span>
+                                                        <span class="header-search__cart-product-times">x</span>
+                                                        <span class="header-search__cart-product-qnt">1</span>
+                                                    </div>
+                                                </div>
+                                                <div class="header-search__cart-product-body">
+                                                    <span class="header-search__cart-product-delete">Xóa</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="header-search__cart-product-footer">
+                                        <a href="#" class="header-search__cart-product-btn btn btn--primary">Xem Giỏ
+                                            Hàng</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="app__container">
+            <div class="grid">
+                <a href="#" class="category__back-link">
+                    <i class="fas fa-chevron-left category__back-link-icon"></i>
+                    Trở lại trang của shop
+                </a><!-- Should use row column instead of separate -->
+
+                <div class="grid__row app__content">
+                    <div class="grid__column-2">
+                        <nav class="category">
+                            <div class="category__shop-avatar">
+                                <div class="category__shop-avatar-container">
+                                    <a href="#" class="category__shop-avatar-link">
+                                        <img src="./assets/img/container/category/shop_avatar.png" alt="Shop Avatar"
+                                            class="category__shop-avatar-img">
+                                        <span class="category__shop-avatar-like">Yêu Thích+</span>
+                                    </a>
+                                    <p class="category__shop-avatar-name">LTT Shop</p>
+                                    <p class="category__shop-avatar-status">Online 5 phút trước</p>
+                                </div>
+                            </div>
+
+                            <h3 class="category__heading">DANH MỤC SHOP</h3>
+                            <ul class="category-list">
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Sản Phẩm</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Sữa Rửa Mặt</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Cnp Rx</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Ohui</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Whoo</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Su:m37</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Sulwhasoo</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Hera</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Saga - Amore - Vdl</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Serum Các Loại</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Top Bán Chạy Nhất</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Su:m37 Xanh Cho Da Dầu Mụn</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Losec Summa Su:m37</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Giảm giá</a>
+                                </li>
+                            </ul>
+                            <!-- THEO DANH MỤC -->
+                            <h3 class="category__heading category__heading--sub">THEO DANH MỤC</h3>
+                            <ul class="category-sort-list">
+                                <li class="category-sort-item">
+                                    <div class="category-sort-item__checkbox">
+                                        <i class="fas fa-check category-sort-item__icon"></i>
+                                    </div>
+                                    <p class="category-sort-item__value">Kem dưỡng ẩm (83)</p>
+                                </li>
+                                <li class="category-sort-item">
+                                    <div class="category-sort-item__checkbox">
+                                        <i class="fas fa-check category-sort-item__icon"></i>
+                                    </div>
+                                    <p class="category-sort-item__value">Tinh chất dưỡng (81)</p>
+                                </li>
+                                <li class="category-sort-item">
+                                    <div class="category-sort-item__checkbox">
+                                        <i class="fas fa-check category-sort-item__icon"></i>
+                                    </div>
+                                    <p class="category-sort-item__value">Trang điểm (57)</p>
+                                </li>
+                                <li class="category-sort-item">
+                                    <div class="category-sort-item__checkbox">
+                                        <i class="fas fa-check category-sort-item__icon"></i>
+                                    </div>
+                                    <p class="category-sort-item__value">Nước cân bằng da (36)</p>
+                                </li>
+                                <div class="category-sort-items">
+
+                                </div>
+                            </ul>
+                            <div class="category-sort__more category-sort__more--mb30">
+                                Thêm
+                                <i class="fas fa-chevron-down category-sort__more-icon"></i>
+                            </div>
+                            <!-- NƠI BÁN -->
+                            <h3 class="category__heading category__heading--sub">NƠI BÁN</h3>
+                            <ul class="category-sort-list">
+                                <li class="category-sort-item">
+                                    <div class="category-sort-item__checkbox">
+                                        <i class="fas fa-check category-sort-item__icon"></i>
+                                    </div>
+                                    <p class="category-sort-item__value">TP. Hồ Chí Minh</p>
+                                </li>
+                                <li class="category-sort-item">
+                                    <div class="category-sort-item__checkbox">
+                                        <i class="fas fa-check category-sort-item__icon"></i>
+                                    </div>
+                                    <p class="category-sort-item__value">Hà Nội</p>
+                                </li>
+                                <li class="category-sort-item">
+                                    <div class="category-sort-item__checkbox">
+                                        <i class="fas fa-check category-sort-item__icon"></i>
+                                    </div>
+                                    <p class="category-sort-item__value">Quận 1</p>
+                                </li>
+                                <li class="category-sort-item">
+                                    <div class="category-sort-item__checkbox">
+                                        <i class="fas fa-check category-sort-item__icon"></i>
+                                    </div>
+                                    <p class="category-sort-item__value">Quận 2</p>
+                                </li>
+                                <div class="category-sort-items">
+                                </div>
+                            </ul>
+                            <div class="category-sort__more category-sort__more--mb30">
+                                Thêm
+                                <i class="fas fa-chevron-down category-sort__more-icon"></i>
+                            </div>
+                            <!-- ĐƠN VỊ VẬN CHUYỂN -->
+                            <h3 class="category__heading category__heading--sub">ĐƠN VỊ VẬN CHUYỂN</h3>
+                            <ul class="category-sort-list">
+                                <li class="category-sort-item">
+                                    <div class="category-sort-item__checkbox">
+                                        <i class="fas fa-check category-sort-item__icon"></i>
+                                    </div>
+                                    <p class="category-sort-item__value">Hỏa Tốc</p>
+                                </li>
+                                <li class="category-sort-item">
+                                    <div class="category-sort-item__checkbox">
+                                        <i class="fas fa-check category-sort-item__icon"></i>
+                                    </div>
+                                    <p class="category-sort-item__value">Nhanh</p>
+                                </li>
+                                <li class="category-sort-item category-sort__more--mb30">
+                                    <div class="category-sort-item__checkbox">
+                                        <i class="fas fa-check category-sort-item__icon"></i>
+                                    </div>
+                                    <p class="category-sort-item__value">Tiết Kiệm</p>
+                                </li>
+                            </ul>
+
+                            <!-- THƯƠNG HIỆU-->
+                            <h3 class="category__heading category__heading--sub">THƯƠNG HIỆU</h3>
+                            <ul class="category-sort-list">
+                                <li class="category-sort-item">
+                                    <div class="category-sort-item__checkbox">
+                                        <i class="fas fa-check category-sort-item__icon"></i>
+                                    </div>
+                                    <p class="category-sort-item__value">su:m37˚</p>
+                                </li>
+                                <li class="category-sort-item">
+                                    <div class="category-sort-item__checkbox">
+                                        <i class="fas fa-check category-sort-item__icon"></i>
+                                    </div>
+                                    <p class="category-sort-item__value">Sulwhasoo</p>
+                                </li>
+                                <li class="category-sort-item">
+                                    <div class="category-sort-item__checkbox">
+                                        <i class="fas fa-check category-sort-item__icon"></i>
+                                    </div>
+                                    <p class="category-sort-item__value">HERA</p>
+                                </li>
+                                <li class="category-sort-item">
+                                    <div class="category-sort-item__checkbox">
+                                        <i class="fas fa-check category-sort-item__icon"></i>
+                                    </div>
+                                    <p class="category-sort-item__value">AMOREPACIFIC</p>
+                                </li>
+                                <div class="category-sort-items">
+                                </div>
+                            </ul>
+                            <div class="category-sort__more category-sort__more--mb30">
+                                Thêm
+                                <i class="fas fa-chevron-down category-sort__more-icon"></i>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="grid__column-10">
+                        <div class="home-filter">
+                            <div class="home-filter__container">
+                                <span class="home-filter__label">Sắp xếp theo</span>
+                                <button class="home-filter__btn btn btn--primary">Phổ Biến</button>
+                                <button class="home-filter__btn btn">Mới Nhất</button>
+                                <button class="home-filter__btn btn">Bán Chạy</button>
+                                <div class="select-input">
+                                    <span class="select-input__label">Giá</span>
+                                    <i class="select-input__icon fas fa-chevron-down"></i>
+                                    <!-- Selection List -->
+                                    <ul class="select-input__list">
+                                        <li class="select-input__item select-input__item--active">
+                                            Giá: Thấp đến Cao
+                                            <i class="fas fa-check select-input__item-icon"></i>
+                                        </li>
+                                        <li class="select-input__item">
+                                            Giá: Cao đến Thấp
+                                            <i class="fas fa-check select-input__item-icon"></i>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="home-filter__page">
+                                <span class="home-filter__page-num">
+                                    <span class="home-filter__page-current">1</span>/14</span>
+                                <div class="home-filter__page-control">
+                                    <button class="home-filter__page-btn btn home-filter__page-btn--disabled">
+                                        <i class="fas fa-chevron-left home-filter__page-icon"></i>
+                                    </button>
+                                    <button class="home-filter__page-btn btn">
+                                        <i class="fas fa-chevron-right home-filter__page-icon"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="home-product">
+                            <div class="grid__row">
+                                <!-- Product items -->
+                                <div class="grid__column-2-4">
+                                    <div class="product-item">
+                                        <a href="#" class="product-item-link">
+                                            <div class="product-item__img"
+                                                style="background-image: url(https://cf.shopee.vn/file/046bb9c95e120723d3ab6daefc867e37_tn);">
+                                            </div>
+                                            <div class="product-item__desc">
+                                                <h4 class="product-item__name">Nồi Chiên Không Dầu Lock&Lock Jumbo Plus
+                                                    Air Fryer 5.2L Màu-đen EJF357BLK</h4>
+                                                <div class="product-item__info">Mua Kèm Deal Sốc</div>
+                                                <div class="product-item__price">
+                                                    <span class="product-item__price-old">₫5.060.000</span>
+                                                    <span class="product-item__price-current">₫2.490.000</span>
+                                                    <img src="./assets/img/container/products/free_ship.svg"
+                                                        alt="free ship icon"
+                                                        class="product-item__price-img product-item__price-img--active">
+                                                </div>
+                                                <div class="product-item__action">
+                                                    <span class="product-item__like">
+                                                        <i class="product-item__like-icon-empty far fa-heart"></i>
+                                                        <i class="product-item__like-icon-solid fas fa-heart"></i>
+                                                    </span>
+                                                    <div class="product-item__rating product-item__rating--active">
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </div>
+                                                    <span class="product-item__sold product-item__sold--active">Đã bán
+                                                        9,3k</span>
+                                                </div>
+                                                <div class="product-item__origin">
+                                                    <span class="product-item__brand">Lock&Lock</span>
+                                                    <span class="product-item__origin-name">TP.Hồ Chí Minh</span>
+                                                </div>
+                                            </div>
+                                            <div class="product-item__favourite">
+                                                <span>Yêu thích+</span>
+                                            </div>
+                                            <div class="product-item__sale-off">
+                                                <span class="product-item__sale-off-percent">51%</span>
+                                                <span class="product-item__sale-off-label">GIẢM</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="grid__column-2-4">
+                                    <div class="product-item">
+                                        <a href="#" class="product-item-link">
+                                            <div class="product-item__img"
+                                                style="background-image: url(https://cf.shopee.vn/file/ae7875c33f7420aabed8e272c275a876_tn);">
+                                            </div>
+                                            <div class="product-item__desc">
+                                                <h4 class="product-item__name">[Mã LIFELL10 giảm 8% tối đa 100K đơn
+                                                    300K] Ly nhựa 2 lớp Lock&Lock kèm ống hút 750ml HAP507</h4>
+                                                <div class="product-item__info">Mua Kèm Deal Sốc</div>
+                                                <div class="product-item__price">
+                                                    <span class="product-item__price-old">₫197.000</span>
+                                                    <span class="product-item__price-current">₫102.000</span>
+                                                    <img src="./assets/img/container/products/free_ship.svg"
+                                                        alt="free ship icon"
+                                                        class="product-item__price-img product-item__price-img--active">
+                                                </div>
+                                                <div class="product-item__action">
+                                                    <span class="product-item__like">
+                                                        <i class="product-item__like-icon-empty far fa-heart"></i>
+                                                        <i class="product-item__like-icon-solid fas fa-heart"></i>
+                                                    </span>
+                                                    <div class="product-item__rating product-item__rating--active">
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                    </div>
+                                                    <span class="product-item__sold product-item__sold--active">Đã bán
+                                                        7,7k</span>
+                                                </div>
+                                                <div class="product-item__origin">
+                                                    <span class="product-item__brand">Lock&Lock</span>
+                                                    <span class="product-item__origin-name">TP.Hồ Chí Minh</span>
+                                                </div>
+                                            </div>
+                                            <div class="product-item__favourite">
+                                                <span>Yêu thích+</span>
+                                            </div>
+                                            <div class="product-item__sale-off">
+                                                <span class="product-item__sale-off-percent">48%</span>
+                                                <span class="product-item__sale-off-label">GIẢM</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="grid__column-2-4">
+                                    <div class="product-item">
+                                        <a href="#" class="product-item-link">
+                                            <div class="product-item__img"
+                                                style="background-image: url(https://cf.shopee.vn/file/cabf33260c5246a3172d565508ca2f33_tn);">
+                                            </div>
+                                            <div class="product-item__desc">
+                                                <h4 class="product-item__name">[Mã ELLOCK10 giảm 5% đơn 500k] Ấm đun
+                                                    nước dùng điện bằng thủy tinh, thương hiệu Lock&Lock EJK341 1.8L
+                                                </h4>
+                                                <div class="product-item__info">Mua Kèm Deal Sốc</div>
+                                                <div class="product-item__price">
+                                                    <span class="product-item__price-old">₫1.070.000</span>
+                                                    <span class="product-item__price-current">₫556.000</span>
+                                                    <img src="./assets/img/container/products/free_ship.svg"
+                                                        alt="free ship icon"
+                                                        class="product-item__price-img product-item__price-img--active">
+                                                </div>
+                                                <div class="product-item__action">
+                                                    <span class="product-item__like">
+                                                        <i class="product-item__like-icon-empty far fa-heart"></i>
+                                                        <i class="product-item__like-icon-solid fas fa-heart"></i>
+                                                    </span>
+                                                    <div class="product-item__rating product-item__rating--active">
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                    </div>
+                                                    <span class="product-item__sold product-item__sold--active">Đã bán
+                                                        4,7k</span>
+                                                </div>
+                                                <div class="product-item__origin">
+                                                    <span class="product-item__brand">Lock&Lock</span>
+                                                    <span class="product-item__origin-name">TP.Hồ Chí Minh</span>
+                                                </div>
+                                            </div>
+                                            <div class="product-item__favourite">
+                                                <span>Yêu thích+</span>
+                                            </div>
+                                            <div class="product-item__sale-off">
+                                                <span class="product-item__sale-off-percent">48%</span>
+                                                <span class="product-item__sale-off-label">GIẢM</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="grid__column-2-4">
+                                    <div class="product-item">
+                                        <a href="#" class="product-item-link">
+                                            <div class="product-item__img"
+                                                style="background-image: url(https://cf.shopee.vn/file/bb92dbacaae4da59d2dd007c4e2835cb_tn);">
+                                            </div>
+                                            <div class="product-item__desc">
+                                                <h4 class="product-item__name">[Mã ELLOCK10 giảm 5% đơn 500k] Bếp Nướng
+                                                    Điện Lock&Lock Electric Grill (2000W) EJG231</h4>
+                                                <div class="product-item__info">Mua Kèm Deal Sốc</div>
+                                                <div class="product-item__price">
+                                                    <span class="product-item__price-old">₫1.429.000</span>
+                                                    <span class="product-item__price-current">₫857.000</span>
+                                                    <img src="./assets/img/container/products/free_ship.svg"
+                                                        alt="free ship icon"
+                                                        class="product-item__price-img product-item__price-img--active">
+                                                </div>
+                                                <div class="product-item__action">
+                                                    <span class="product-item__like">
+                                                        <i class="product-item__like-icon-empty far fa-heart"></i>
+                                                        <i class="product-item__like-icon-solid fas fa-heart"></i>
+                                                    </span>
+                                                    <div class="product-item__rating product-item__rating--active">
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                    </div>
+                                                    <span class="product-item__sold product-item__sold--active">Đã bán
+                                                        2,6k</span>
+                                                </div>
+                                                <div class="product-item__origin">
+                                                    <span class="product-item__brand">Lock&Lock</span>
+                                                    <span class="product-item__origin-name">TP.Hồ Chí Minh</span>
+                                                </div>
+                                            </div>
+                                            <div class="product-item__favourite">
+                                                <span>Yêu thích+</span>
+                                            </div>
+                                            <div class="product-item__sale-off">
+                                                <span class="product-item__sale-off-percent">40%</span>
+                                                <span class="product-item__sale-off-label">GIẢM</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="grid__column-2-4">
+                                    <div class="product-item">
+                                        <a href="#" class="product-item-link">
+                                            <div class="product-item__img"
+                                                style="background-image: url(https://cf.shopee.vn/file/ed2572c46ef676aa2022b949b337fc92_tn);">
+                                            </div>
+                                            <div class="product-item__desc">
+                                                <h4 class="product-item__name">Máy làm sữa chua Lock&Lock EJY110SLV</h4>
+                                                <div class="product-item__info">Mua Kèm Deal Sốc</div>
+                                                <div class="product-item__price">
+                                                    <span class="product-item__price-old">₫615.000</span>
+                                                    <span class="product-item__price-current">₫320.000</span>
+                                                    <img src="./assets/img/container/products/free_ship.svg"
+                                                        alt="free ship icon"
+                                                        class="product-item__price-img product-item__price-img--active">
+                                                </div>
+                                                <div class="product-item__action">
+                                                    <span class="product-item__like">
+                                                        <i class="product-item__like-icon-empty far fa-heart"></i>
+                                                        <i class="product-item__like-icon-solid fas fa-heart"></i>
+                                                    </span>
+                                                    <div class="product-item__rating product-item__rating--active">
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                    </div>
+                                                    <span class="product-item__sold product-item__sold--active">Đã bán
+                                                        2,2k</span>
+                                                </div>
+                                                <div class="product-item__origin">
+                                                    <span class="product-item__brand">Lock&Lock</span>
+                                                    <span class="product-item__origin-name">Long An</span>
+                                                </div>
+                                            </div>
+                                            <div class="product-item__favourite">
+                                                <span>Yêu thích+</span>
+                                            </div>
+                                            <div class="product-item__sale-off">
+                                                <span class="product-item__sale-off-percent">48%</span>
+                                                <span class="product-item__sale-off-label">GIẢM</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="grid__column-2-4">
+                                    <div class="product-item">
+                                        <a href="#" class="product-item-link">
+                                            <div class="product-item__img"
+                                                style="background-image: url(https://cf.shopee.vn/file/93f70147b6b22ec616391c601a007dae_tn);">
+                                            </div>
+                                            <div class="product-item__desc">
+                                                <h4 class="product-item__name">[Mã ELLOCK101 giảm 5% đơn 500k] Nồi Chiên
+                                                    Không Dầu Lock&Lock Super Jumbo Plus Air Fryer 7.2L Màu đen
+                                                    EJF296BLK</h4>
+                                                <div class="product-item__info">Mua Kèm Deal Sốc</div>
+                                                <div class="product-item__price">
+                                                    <span class="product-item__price-old">₫5.460.000</span>
+                                                    <span class="product-item__price-current">₫2.880.000</span>
+                                                    <img src="./assets/img/container/products/free_ship.svg"
+                                                        alt="free ship icon"
+                                                        class="product-item__price-img product-item__price-img--active">
+                                                </div>
+                                                <div class="product-item__action">
+                                                    <span class="product-item__like">
+                                                        <i class="product-item__like-icon-empty far fa-heart"></i>
+                                                        <i class="product-item__like-icon-solid fas fa-heart"></i>
+                                                    </span>
+                                                    <div class="product-item__rating product-item__rating--active">
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                    </div>
+                                                    <span class="product-item__sold product-item__sold--active">Đã bán
+                                                        2,7k</span>
+                                                </div>
+                                                <div class="product-item__origin">
+                                                    <span class="product-item__brand">Lock&Lock</span>
+                                                    <span class="product-item__origin-name">TP.Hồ Chí Minh</span>
+                                                </div>
+                                            </div>
+                                            <div class="product-item__favourite">
+                                                <span>Yêu thích+</span>
+                                            </div>
+                                            <div class="product-item__sale-off">
+                                                <span class="product-item__sale-off-percent">47%</span>
+                                                <span class="product-item__sale-off-label">GIẢM</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="grid__column-2-4">
+                                    <div class="product-item">
+                                        <a href="#" class="product-item-link">
+                                            <div class="product-item__img"
+                                                style="background-image: url(https://cf.shopee.vn/file/5df4ea5b154ef950c1494412510529da_tn);">
+                                            </div>
+                                            <div class="product-item__desc">
+                                                <h4 class="product-item__name">Bình Đun Siêu Tốc Lock&Lock (1.7L) Trắng
+                                                    EJK738WHT</h4>
+                                                <div class="product-item__info">Mua Kèm Deal Sốc</div>
+                                                <div class="product-item__price">
+                                                    <span class="product-item__price-old">₫745.000</span>
+                                                    <span class="product-item__price-current">₫387.000</span>
+                                                    <img src="./assets/img/container/products/free_ship.svg"
+                                                        alt="free ship icon"
+                                                        class="product-item__price-img product-item__price-img--active">
+                                                </div>
+                                                <div class="product-item__action">
+                                                    <span class="product-item__like">
+                                                        <i class="product-item__like-icon-empty far fa-heart"></i>
+                                                        <i class="product-item__like-icon-solid fas fa-heart"></i>
+                                                    </span>
+                                                    <div class="product-item__rating product-item__rating--active">
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                    </div>
+                                                    <span class="product-item__sold product-item__sold--active">Đã bán
+                                                        4,9k</span>
+                                                </div>
+                                                <div class="product-item__origin">
+                                                    <span class="product-item__brand">Lock&Lock</span>
+                                                    <span class="product-item__origin-name">TP.Hồ Chí Minh</span>
+                                                </div>
+                                            </div>
+                                            <div class="product-item__favourite">
+                                                <span>Yêu thích+</span>
+                                            </div>
+                                            <div class="product-item__sale-off">
+                                                <span class="product-item__sale-off-percent">48%</span>
+                                                <span class="product-item__sale-off-label">GIẢM</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="grid__column-2-4">
+                                    <div class="product-item">
+                                        <a href="#" class="product-item-link">
+                                            <div class="product-item__img"
+                                                style="background-image: url(https://cf.shopee.vn/file/5fd23a76a664e286e9153d8ab2f6ece3_tn);">
+                                            </div>
+                                            <div class="product-item__desc">
+                                                <h4 class="product-item__name">[Mã LIFELL10 giảm 8% tối đa 100K đơn
+                                                    300K] Ly Giữ Nhiệt Bằng Thép Lock&Lock Clip Tumbler (540ml) Đen
+                                                    [LHC4151BLK]</h4>
+                                                <div class="product-item__info">Mua Kèm Deal Sốc</div>
+                                                <div class="product-item__price">
+                                                    <span class="product-item__price-old">₫460.000</span>
+                                                    <span class="product-item__price-current">₫276.000</span>
+                                                    <img src="./assets/img/container/products/free_ship.svg"
+                                                        alt="free ship icon"
+                                                        class="product-item__price-img product-item__price-img--active">
+                                                </div>
+                                                <div class="product-item__action">
+                                                    <span class="product-item__like">
+                                                        <i class="product-item__like-icon-empty far fa-heart"></i>
+                                                        <i class="product-item__like-icon-solid fas fa-heart"></i>
+                                                    </span>
+                                                    <div class="product-item__rating product-item__rating--active">
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                    </div>
+                                                    <span class="product-item__sold product-item__sold--active">Đã bán
+                                                        7,1k</span>
+                                                </div>
+                                                <div class="product-item__origin">
+                                                    <span class="product-item__brand">Lock&Lock</span>
+                                                    <span class="product-item__origin-name">TP.Hồ Chí Minh</span>
+                                                </div>
+                                            </div>
+                                            <div class="product-item__favourite">
+                                                <span>Yêu thích+</span>
+                                            </div>
+                                            <div class="product-item__sale-off">
+                                                <span class="product-item__sale-off-percent">40%</span>
+                                                <span class="product-item__sale-off-label">GIẢM</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="grid__column-2-4">
+                                    <div class="product-item">
+                                        <a href="#" class="product-item-link">
+                                            <div class="product-item__img"
+                                                style="background-image: url(https://cf.shopee.vn/file/15c6e1e2910b11774c4c2165e5b5e275_tn);">
+                                            </div>
+                                            <div class="product-item__desc">
+                                                <h4 class="product-item__name">[Mã LIFELL10 giảm 8% tối đa 100K đơn
+                                                    300K] Ly Giữ Nhiệt Bằng Thép Không Gỉ Lock&Lock Clip Tumbler (540ml)
+                                                    Bạc LHC4151</h4>
+                                                <div class="product-item__info">Mua Kèm Deal Sốc</div>
+                                                <div class="product-item__price">
+                                                    <span class="product-item__price-old">₫460.000</span>
+                                                    <span class="product-item__price-current">₫276.000</span>
+                                                    <img src="./assets/img/container/products/free_ship.svg"
+                                                        alt="free ship icon"
+                                                        class="product-item__price-img product-item__price-img--active">
+                                                </div>
+                                                <div class="product-item__action">
+                                                    <span class="product-item__like">
+                                                        <i class="product-item__like-icon-empty far fa-heart"></i>
+                                                        <i class="product-item__like-icon-solid fas fa-heart"></i>
+                                                    </span>
+                                                    <div class="product-item__rating product-item__rating--active">
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                    </div>
+                                                    <span class="product-item__sold product-item__sold--active">Đã bán
+                                                        6,1k</span>
+                                                </div>
+                                                <div class="product-item__origin">
+                                                    <span class="product-item__brand">Lock&Lock</span>
+                                                    <span class="product-item__origin-name">TP.Hồ Chí Minh</span>
+                                                </div>
+                                            </div>
+                                            <div class="product-item__favourite">
+                                                <span>Yêu thích+</span>
+                                            </div>
+                                            <div class="product-item__sale-off">
+                                                <span class="product-item__sale-off-percent">40%</span>
+                                                <span class="product-item__sale-off-label">GIẢM</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="grid__column-2-4">
+                                    <div class="product-item">
+                                        <a href="#" class="product-item-link">
+                                            <div class="product-item__img"
+                                                style="background-image: url(https://cf.shopee.vn/file/b1e84912d5bd4c8336af37dc692b0a40_tn);">
+                                            </div>
+                                            <div class="product-item__desc">
+                                                <h4 class="product-item__name">[Mã LIFELL10 giảm 8% tối đa 100K đơn
+                                                    300K] Bình giữ nhiệt Lock&Lock Two-tone Clip 540ml LHC4151</h4>
+                                                <div class="product-item__info">Mua Kèm Deal Sốc</div>
+                                                <div class="product-item__price">
+                                                    <span class="product-item__price-old">₫460.000</span>
+                                                    <span class="product-item__price-current">₫239.000</span>
+                                                    <img src="./assets/img/container/products/free_ship.svg"
+                                                        alt="free ship icon"
+                                                        class="product-item__price-img product-item__price-img--active">
+                                                </div>
+                                                <div class="product-item__action">
+                                                    <span class="product-item__like">
+                                                        <i class="product-item__like-icon-empty far fa-heart"></i>
+                                                        <i class="product-item__like-icon-solid fas fa-heart"></i>
+                                                    </span>
+                                                    <div class="product-item__rating product-item__rating--active">
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                    </div>
+                                                    <span class="product-item__sold product-item__sold--active">Đã bán
+                                                        10,4k</span>
+                                                </div>
+                                                <div class="product-item__origin">
+                                                    <span class="product-item__brand">Lock&Lock</span>
+                                                    <span class="product-item__origin-name">TP.Hồ Chí Minh</span>
+                                                </div>
+                                            </div>
+                                            <div class="product-item__favourite">
+                                                <span>Yêu thích+</span>
+                                            </div>
+                                            <div class="product-item__sale-off">
+                                                <span class="product-item__sale-off-percent">48%</span>
+                                                <span class="product-item__sale-off-label">GIẢM</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="grid__column-2-4">
+                                    <div class="product-item">
+                                        <a href="#" class="product-item-link">
+                                            <div class="product-item__img"
+                                                style="background-image: url(https://cf.shopee.vn/file/239472a7144f757d5b4015c21ccf79f4_tn);">
+                                            </div>
+                                            <div class="product-item__desc">
+                                                <h4 class="product-item__name">Bàn chải đánh răng điện Lock&Lock sạc
+                                                    không dây ENR346 (màu trắng & màu đen)</h4>
+                                                <div class="product-item__info">Mua Kèm Deal Sốc</div>
+                                                <div class="product-item__price">
+                                                    <span class="product-item__price-old">₫1.555.000</span>
+                                                    <span class="product-item__price-current">₫809.000</span>
+                                                    <img src="./assets/img/container/products/free_ship.svg"
+                                                        alt="free ship icon"
+                                                        class="product-item__price-img product-item__price-img--active">
+                                                </div>
+                                                <div class="product-item__action">
+                                                    <span class="product-item__like">
+                                                        <i class="product-item__like-icon-empty far fa-heart"></i>
+                                                        <i class="product-item__like-icon-solid fas fa-heart"></i>
+                                                    </span>
+                                                    <div class="product-item__rating product-item__rating--active">
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                    </div>
+                                                    <span class="product-item__sold product-item__sold--active">Đã bán
+                                                        3k</span>
+                                                </div>
+                                                <div class="product-item__origin">
+                                                    <span class="product-item__brand">Lock&Lock</span>
+                                                    <span class="product-item__origin-name">Long An</span>
+                                                </div>
+                                            </div>
+                                            <div class="product-item__favourite">
+                                                <span>Yêu thích+</span>
+                                            </div>
+                                            <div class="product-item__sale-off">
+                                                <span class="product-item__sale-off-percent">48%</span>
+                                                <span class="product-item__sale-off-label">GIẢM</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="grid__column-2-4">
+                                    <div class="product-item">
+                                        <a href="#" class="product-item-link">
+                                            <div class="product-item__img"
+                                                style="background-image: url(https://cf.shopee.vn/file/0333ab31ae0e3530a88733bc0aba7f95_tn);">
+                                            </div>
+                                            <div class="product-item__desc">
+                                                <h4 class="product-item__name">[Mã LIFELL10 giảm 8% tối đa 100K đơn 300K] Bình giữ nhiệt Lock&Lock Energetic one-touch 550ml - LHC3249 (4 màu)</h4>
+                                                <div class="product-item__info">Mua Kèm Deal Sốc</div>
+                                                <div class="product-item__price">
+                                                    <span class="product-item__price-old">₫480.000</span>
+                                                    <span class="product-item__price-current">₫250.000</span>
+                                                    <img src="./assets/img/container/products/free_ship.svg"
+                                                        alt="free ship icon"
+                                                        class="product-item__price-img product-item__price-img--active">
+                                                </div>
+                                                <div class="product-item__action">
+                                                    <span class="product-item__like">
+                                                        <i class="product-item__like-icon-empty far fa-heart"></i>
+                                                        <i class="product-item__like-icon-solid fas fa-heart"></i>
+                                                    </span>
+                                                    <div class="product-item__rating product-item__rating--active">
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                    </div>
+                                                    <span class="product-item__sold product-item__sold--active">Đã bán 4,7k</span>
+                                                </div>
+                                                <div class="product-item__origin">
+                                                    <span class="product-item__brand">Lock&Lock</span>
+                                                    <span class="product-item__origin-name">TP. Hồ Chí Minh</span>
+                                                </div>
+                                            </div>
+                                            <div class="product-item__favourite">
+                                                <span>Yêu thích+</span>
+                                            </div>
+                                            <div class="product-item__sale-off">
+                                                <span class="product-item__sale-off-percent">48%</span>
+                                                <span class="product-item__sale-off-label">GIẢM</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="grid__column-2-4">
+                                    <div class="product-item">
+                                        <a href="#" class="product-item-link">
+                                            <div class="product-item__img"
+                                                style="background-image: url(https://cf.shopee.vn/file/7ffd280f7ba62d71de6885c063eb9edc_tn);">
+                                            </div>
+                                            <div class="product-item__desc">
+                                                <h4 class="product-item__name">Nồi Chiên Không Dầu Lock&Lock Jumbo Plus Air Fryer 5.2L Màu trắng EJF357WHT</h4>
+                                                <div class="product-item__info">Mua Kèm Deal Sốc</div>
+                                                <div class="product-item__price">
+                                                    <span class="product-item__price-old">₫5.060.000</span>
+                                                    <span class="product-item__price-current">₫2.490.000</span>
+                                                    <img src="./assets/img/container/products/free_ship.svg"
+                                                        alt="free ship icon"
+                                                        class="product-item__price-img product-item__price-img--active">
+                                                </div>
+                                                <div class="product-item__action">
+                                                    <span class="product-item__like">
+                                                        <i class="product-item__like-icon-empty far fa-heart"></i>
+                                                        <i class="product-item__like-icon-solid fas fa-heart"></i>
+                                                    </span>
+                                                    <div class="product-item__rating product-item__rating--active">
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                    </div>
+                                                    <span class="product-item__sold product-item__sold--active">Đã bán 5k</span>
+                                                </div>
+                                                <div class="product-item__origin">
+                                                    <span class="product-item__brand">Lock&Lock</span>
+                                                    <span class="product-item__origin-name">TP. Hồ Chí Minh</span>
+                                                </div>
+                                            </div>
+                                            <div class="product-item__favourite">
+                                                <span>Yêu thích+</span>
+                                            </div>
+                                            <div class="product-item__sale-off">
+                                                <span class="product-item__sale-off-percent">51%</span>
+                                                <span class="product-item__sale-off-label">GIẢM</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="grid__column-2-4">
+                                    <div class="product-item">
+                                        <a href="#" class="product-item-link">
+                                            <div class="product-item__img"
+                                                style="background-image: url(https://cf.shopee.vn/file/25639411d9eefccb0763a9d47f4113cd_tn);">
+                                            </div>
+                                            <div class="product-item__desc">
+                                                <h4 class="product-item__name">[Mã LIFELL10 giảm 8% tối đa 100K đơn 300K] Bình giữ nhiệt Lock&Lock Belt Bottle 490ml - LHC4267 (3 màu)</h4>
+                                                <div class="product-item__info">Mua Kèm Deal Sốc</div>
+                                                <div class="product-item__price">
+                                                    <span class="product-item__price-old">₫430.000</span>
+                                                    <span class="product-item__price-current">₫258.000</span>
+                                                    <img src="./assets/img/container/products/free_ship.svg"
+                                                        alt="free ship icon"
+                                                        class="product-item__price-img product-item__price-img--active">
+                                                </div>
+                                                <div class="product-item__action">
+                                                    <span class="product-item__like">
+                                                        <i class="product-item__like-icon-empty far fa-heart"></i>
+                                                        <i class="product-item__like-icon-solid fas fa-heart"></i>
+                                                    </span>
+                                                    <div class="product-item__rating product-item__rating--active">
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                    </div>
+                                                    <span class="product-item__sold product-item__sold--active">Đã bán 1,3k</span>
+                                                </div>
+                                                <div class="product-item__origin">
+                                                    <span class="product-item__brand">Lock&Lock</span>
+                                                    <span class="product-item__origin-name">TP. Hồ Chí Minh</span>
+                                                </div>
+                                            </div>
+                                            <div class="product-item__favourite">
+                                                <span>Yêu thích+</span>
+                                            </div>
+                                            <div class="product-item__sale-off">
+                                                <span class="product-item__sale-off-percent">51%</span>
+                                                <span class="product-item__sale-off-label">GIẢM</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="grid__column-2-4">
+                                    <div class="product-item">
+                                        <a href="#" class="product-item-link">
+                                            <div class="product-item__img"
+                                                style="background-image: url(https://cf.shopee.vn/file/e59e4e85678cdd3ae5fb5c6426ef844d_tn);">
+                                            </div>
+                                            <div class="product-item__desc">
+                                                <h4 class="product-item__name">[Mã LIFEL10 giảm 10% tối đa 100K đơn 350K] Bình Giữ Nhiệt Lock&Lock Vacuum Bottle Lock&Lock (800ml) - LHC6180 (3 màu)</h4>
+                                                <div class="product-item__info">Mua Kèm Deal Sốc</div>
+                                                <div class="product-item__price">
+                                                    <span class="product-item__price-old">₫615.000</span>
+                                                    <span class="product-item__price-current">₫320.000</span>
+                                                    <img src="./assets/img/container/products/free_ship.svg"
+                                                        alt="free ship icon"
+                                                        class="product-item__price-img product-item__price-img--active">
+                                                </div>
+                                                <div class="product-item__action">
+                                                    <span class="product-item__like">
+                                                        <i class="product-item__like-icon-empty far fa-heart"></i>
+                                                        <i class="product-item__like-icon-solid fas fa-heart"></i>
+                                                    </span>
+                                                    <div class="product-item__rating product-item__rating--active">
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                    </div>
+                                                    <span class="product-item__sold product-item__sold--active">Đã bán 4,7k</span>
+                                                </div>
+                                                <div class="product-item__origin">
+                                                    <span class="product-item__brand">Lock&Lock</span>
+                                                    <span class="product-item__origin-name">TP. Hồ Chí Minh</span>
+                                                </div>
+                                            </div>
+                                            <div class="product-item__favourite">
+                                                <span>Yêu thích+</span>
+                                            </div>
+                                            <div class="product-item__sale-off">
+                                                <span class="product-item__sale-off-percent">51%</span>
+                                                <span class="product-item__sale-off-label">GIẢM</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="grid__column-2-4">
+                                    <div class="product-item">
+                                        <a href="#" class="product-item-link">
+                                            <div class="product-item__img"
+                                                style="background-image: url(https://cf.shopee.vn/file/dfa34953c82dae01126794b8684dcedb_tn);">
+                                            </div>
+                                            <div class="product-item__desc">
+                                                <h4 class="product-item__name">[Mã LIFEL10 giảm 10% tối đa 100K đơn 350K] Cây lau nhà Lock&Lock dạng xịt nước ETM472</h4>
+                                                <div class="product-item__info">Mua Kèm Deal Sốc</div>
+                                                <div class="product-item__price">
+                                                    <span class="product-item__price-old">₫490.000</span>
+                                                    <span class="product-item__price-current">₫304.000</span>
+                                                    <img src="./assets/img/container/products/free_ship.svg"
+                                                        alt="free ship icon"
+                                                        class="product-item__price-img product-item__price-img--active">
+                                                </div>
+                                                <div class="product-item__action">
+                                                    <span class="product-item__like">
+                                                        <i class="product-item__like-icon-empty far fa-heart"></i>
+                                                        <i class="product-item__like-icon-solid fas fa-heart"></i>
+                                                    </span>
+                                                    <div class="product-item__rating product-item__rating--active">
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                    </div>
+                                                    <span class="product-item__sold product-item__sold--active">Đã bán 467</span>
+                                                </div>
+                                                <div class="product-item__origin">
+                                                    <span class="product-item__brand">Lock&Lock</span>
+                                                    <span class="product-item__origin-name">TP. Hồ Chí Minh</span>
+                                                </div>
+                                            </div>
+                                            <div class="product-item__favourite">
+                                                <span>Yêu thích+</span>
+                                            </div>
+                                            <div class="product-item__sale-off">
+                                                <span class="product-item__sale-off-percent">38%</span>
+                                                <span class="product-item__sale-off-label">GIẢM</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="grid__column-2-4">
+                                    <div class="product-item">
+                                        <a href="#" class="product-item-link">
+                                            <div class="product-item__img"
+                                                style="background-image: url(https://cf.shopee.vn/file/38ebbfec394ab88fa6765984dbe0d484_tn);">
+                                            </div>
+                                            <div class="product-item__desc">
+                                                <h4 class="product-item__name">[Mã LIFELL10 giảm 8% tối đa 100K đơn 300K] Nồi nhôm chống dính BAUM Marble 20cm Lock&Lock LBU1202</h4>
+                                                <div class="product-item__info">Mua Kèm Deal Sốc</div>
+                                                <div class="product-item__price">
+                                                    <span class="product-item__price-old">₫619.000</span>
+                                                    <span class="product-item__price-current">₫331.000</span>
+                                                    <img src="./assets/img/container/products/free_ship.svg"
+                                                        alt="free ship icon"
+                                                        class="product-item__price-img product-item__price-img--active">
+                                                </div>
+                                                <div class="product-item__action">
+                                                    <span class="product-item__like">
+                                                        <i class="product-item__like-icon-empty far fa-heart"></i>
+                                                        <i class="product-item__like-icon-solid fas fa-heart"></i>
+                                                    </span>
+                                                    <div class="product-item__rating product-item__rating--active">
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                    </div>
+                                                    <span class="product-item__sold product-item__sold--active">Đã bán 680</span>
+                                                </div>
+                                                <div class="product-item__origin">
+                                                    <span class="product-item__brand">Lock&Lock</span>
+                                                    <span class="product-item__origin-name">TP. Hồ Chí Minh</span>
+                                                </div>
+                                            </div>
+                                            <div class="product-item__favourite">
+                                                <span>Yêu thích+</span>
+                                            </div>
+                                            <div class="product-item__sale-off">
+                                                <span class="product-item__sale-off-percent">47%</span>
+                                                <span class="product-item__sale-off-label">GIẢM</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="grid__column-2-4">
+                                    <div class="product-item">
+                                        <a href="#" class="product-item-link">
+                                            <div class="product-item__img"
+                                                style="background-image: url(https://cf.shopee.vn/file/30d2c14c627bbddb4934c61be416cec5_tn);">
+                                            </div>
+                                            <div class="product-item__desc">
+                                                <h4 class="product-item__name">Ấm đun bằng thép không gỉ Lock&Lock, 1.7L màu đen EJK738BLK</h4>
+                                                <div class="product-item__info">Mua Kèm Deal Sốc</div>
+                                                <div class="product-item__price">
+                                                    <span class="product-item__price-old">₫745.000</span>
+                                                    <span class="product-item__price-current">₫387.000</span>
+                                                    <img src="./assets/img/container/products/free_ship.svg"
+                                                        alt="free ship icon"
+                                                        class="product-item__price-img product-item__price-img--active">
+                                                </div>
+                                                <div class="product-item__action">
+                                                    <span class="product-item__like">
+                                                        <i class="product-item__like-icon-empty far fa-heart"></i>
+                                                        <i class="product-item__like-icon-solid fas fa-heart"></i>
+                                                    </span>
+                                                    <div class="product-item__rating product-item__rating--active">
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                    </div>
+                                                    <span class="product-item__sold product-item__sold--active">Đã bán 1,4k</span>
+                                                </div>
+                                                <div class="product-item__origin">
+                                                    <span class="product-item__brand">Lock&Lock</span>
+                                                    <span class="product-item__origin-name">TP. Hồ Chí Minh</span>
+                                                </div>
+                                            </div>
+                                            <div class="product-item__favourite">
+                                                <span>Yêu thích+</span>
+                                            </div>
+                                            <div class="product-item__sale-off">
+                                                <span class="product-item__sale-off-percent">47%</span>
+                                                <span class="product-item__sale-off-label">GIẢM</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="grid__column-2-4">
+                                    <div class="product-item">
+                                        <a href="#" class="product-item-link">
+                                            <div class="product-item__img"
+                                                style="background-image: url(https://cf.shopee.vn/file/084ba25fc3db20afebeb637b55871d86_tn);">
+                                            </div>
+                                            <div class="product-item__desc">
+                                                <h4 class="product-item__name">[Mã LIFEL10 giảm 10% tối đa 100K đơn 350K] Chảo Sâu Lòng Decore Lock&Lock, 22CM - màu vàng - LDE1225IH</h4>
+                                                <div class="product-item__info">Mua Kèm Deal Sốc</div>
+                                                <div class="product-item__price">
+                                                    <span class="product-item__price-old">₫601.000</span>
+                                                    <span class="product-item__price-current">₫361.000</span>
+                                                    <img src="./assets/img/container/products/free_ship.svg"
+                                                        alt="free ship icon"
+                                                        class="product-item__price-img product-item__price-img--active">
+                                                </div>
+                                                <div class="product-item__action">
+                                                    <span class="product-item__like">
+                                                        <i class="product-item__like-icon-empty far fa-heart"></i>
+                                                        <i class="product-item__like-icon-solid fas fa-heart"></i>
+                                                    </span>
+                                                    <div class="product-item__rating product-item__rating--active">
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                    </div>
+                                                    <span class="product-item__sold product-item__sold--active">Đã bán 579</span>
+                                                </div>
+                                                <div class="product-item__origin">
+                                                    <span class="product-item__brand">Lock&Lock</span>
+                                                    <span class="product-item__origin-name">TP. Hồ Chí Minh</span>
+                                                </div>
+                                            </div>
+                                            <div class="product-item__favourite">
+                                                <span>Yêu thích+</span>
+                                            </div>
+                                            <div class="product-item__sale-off">
+                                                <span class="product-item__sale-off-percent">40%</span>
+                                                <span class="product-item__sale-off-label">GIẢM</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="grid__column-2-4">
+                                    <div class="product-item">
+                                        <a href="#" class="product-item-link">
+                                            <div class="product-item__img"
+                                                style="background-image: url(https://cf.shopee.vn/file/9bfd8c6ccf8baf7206a74000acf0c8e6_tn);">
+                                            </div>
+                                            <div class="product-item__desc">
+                                                <h4 class="product-item__name">[Mã LIFELL10 giảm 8% tối đa 100K đơn 300K] Dao gọt trái cây có nắp đậy 4" bằng thép, nhựa ABS, AS,PP Lock&Lock-CKK501BLK</h4>
+                                                <div class="product-item__info">Mua Kèm Deal Sốc</div>
+                                                <div class="product-item__price">
+                                                    <span class="product-item__price-old">₫62.000</span>
+                                                    <span class="product-item__price-current">₫40.000</span>
+                                                    <img src="./assets/img/container/products/free_ship.svg"
+                                                        alt="free ship icon"
+                                                        class="product-item__price-img product-item__price-img--active">
+                                                </div>
+                                                <div class="product-item__action">
+                                                    <span class="product-item__like">
+                                                        <i class="product-item__like-icon-empty far fa-heart"></i>
+                                                        <i class="product-item__like-icon-solid fas fa-heart"></i>
+                                                    </span>
+                                                    <div class="product-item__rating product-item__rating--active">
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                    </div>
+                                                    <span class="product-item__sold product-item__sold--active">Đã bán 1,6k</span>
+                                                </div>
+                                                <div class="product-item__origin">
+                                                    <span class="product-item__brand">Lock&Lock</span>
+                                                    <span class="product-item__origin-name">TP. Hồ Chí Minh</span>
+                                                </div>
+                                            </div>
+                                            <div class="product-item__favourite">
+                                                <span>Yêu thích+</span>
+                                            </div>
+                                            <div class="product-item__sale-off">
+                                                <span class="product-item__sale-off-percent">35%</span>
+                                                <span class="product-item__sale-off-label">GIẢM</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="grid__column-2-4">
+                                    <div class="product-item">
+                                        <a href="#" class="product-item-link">
+                                            <div class="product-item__img"
+                                                style="background-image: url(https://cf.shopee.vn/file/d208635763789d23c03de431c908c34b_tn);">
+                                            </div>
+                                            <div class="product-item__desc">
+                                                <h4 class="product-item__name">[Mã LIFELL10 giảm 8% tối đa 100K đơn 300K] Khay Silicone dành cho nồi chiên k dầu 3.5L và lò vi sóng Lock&Lock - CKB003</h4>
+                                                <div class="product-item__info">Mua Kèm Deal Sốc</div>
+                                                <div class="product-item__price">
+                                                    <span class="product-item__price-old">₫300.000</span>
+                                                    <span class="product-item__price-current">₫180.000</span>
+                                                    <img src="./assets/img/container/products/free_ship.svg"
+                                                        alt="free ship icon"
+                                                        class="product-item__price-img product-item__price-img--active">
+                                                </div>
+                                                <div class="product-item__action">
+                                                    <span class="product-item__like">
+                                                        <i class="product-item__like-icon-empty far fa-heart"></i>
+                                                        <i class="product-item__like-icon-solid fas fa-heart"></i>
+                                                    </span>
+                                                    <div class="product-item__rating product-item__rating--active">
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                    </div>
+                                                    <span class="product-item__sold product-item__sold--active">Đã bán 475</span>
+                                                </div>
+                                                <div class="product-item__origin">
+                                                    <span class="product-item__brand">Lock&Lock</span>
+                                                    <span class="product-item__origin-name">TP. Hồ Chí Minh</span>
+                                                </div>
+                                            </div>
+                                            <div class="product-item__favourite">
+                                                <span>Yêu thích+</span>
+                                            </div>
+                                            <div class="product-item__sale-off">
+                                                <span class="product-item__sale-off-percent">40%</span>
+                                                <span class="product-item__sale-off-label">GIẢM</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="grid__column-2-4">
+                                    <div class="product-item">
+                                        <a href="#" class="product-item-link">
+                                            <div class="product-item__img"
+                                                style="background-image: url(https://cf.shopee.vn/file/023fc362f07fe476b7f33e1a89818392_tn);">
+                                            </div>
+                                            <div class="product-item__desc">
+                                                <h4 class="product-item__name">Máy vắt cam Lock&Lock 1.2L - màu trắng EJJ241</h4>
+                                                <div class="product-item__info">Mua Kèm Deal Sốc</div>
+                                                <div class="product-item__price">
+                                                    <span class="product-item__price-old product-item__price-old--active">₫530.000</span>
+                                                    <span class="product-item__price-current">₫318.000</span>
+                                                    <img src="./assets/img/container/products/free_ship.svg"
+                                                        alt="free ship icon"
+                                                        class="product-item__price-img product-item__price-img--active">
+                                                </div>
+                                                <div class="product-item__action">
+                                                    <span class="product-item__like">
+                                                        <i class="product-item__like-icon-empty far fa-heart"></i>
+                                                        <i class="product-item__like-icon-solid fas fa-heart"></i>
+                                                    </span>
+                                                    <div class="product-item__rating product-item__rating--active">
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                    </div>
+                                                    <span class="product-item__sold product-item__sold--active">Đã bán 1,9k</span>
+                                                </div>
+                                                <div class="product-item__origin">
+                                                    <span class="product-item__brand">Lock&Lock</span>
+                                                    <span class="product-item__origin-name">TP. Hồ Chí Minh</span>
+                                                </div>
+                                            </div>
+                                            <div class="product-item__favourite">
+                                                <span>Yêu thích+</span>
+                                            </div>
+                                            <div class="product-item__sale-off">
+                                                <span class="product-item__sale-off-percent">40%</span>
+                                                <span class="product-item__sale-off-label">GIẢM</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="grid__column-2-4">
+                                    <div class="product-item">
+                                        <a href="#" class="product-item-link">
+                                            <div class="product-item__img"
+                                                style="background-image: url(https://cf.shopee.vn/file/e30265bb71b961b1209875f106df3890_tn);">
+                                            </div>
+                                            <div class="product-item__desc">
+                                                <h4 class="product-item__name">[HA Gift][Hàng tặng không bán] Sách hướng dẫn nấu ăn dành riêng cho nồi chiên không dầu Lock&Lock</h4>
+                                                <div class="product-item__info">Mua Kèm Deal Sốc</div>
+                                                <div class="product-item__price">
+                                                    <span class="product-item__price-old"></span>
+                                                    <span class="product-item__price-current">₫299.000</span>
+                                                    <img src="./assets/img/container/products/free_ship.svg"
+                                                        alt="free ship icon"
+                                                        class="product-item__price-img product-item__price-img--active">
+                                                </div>
+                                                <div class="product-item__action">
+                                                    <span class="product-item__like">
+                                                        <i class="product-item__like-icon-empty far fa-heart"></i>
+                                                        <i class="product-item__like-icon-solid fas fa-heart"></i>
+                                                    </span>
+                                                    <div class="product-item__rating product-item__rating--active">
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                    </div>
+                                                    <span class="product-item__sold product-item__sold--active">Đã bán 1,6k</span>
+                                                </div>
+                                                <div class="product-item__origin">
+                                                    <span class="product-item__brand">Lock&Lock</span>
+                                                    <span class="product-item__origin-name">TP. Hồ Chí Minh</span>
+                                                </div>
+                                            </div>
+                                            <div class="product-item__favourite">
+                                                <span>Yêu thích+</span>
+                                            </div>
+                                            <div class="product-item__sale-off">
+                                                <span class="product-item__sale-off-percent">40%</span>
+                                                <span class="product-item__sale-off-label">GIẢM</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="grid__column-2-4">
+                                    <div class="product-item">
+                                        <a href="#" class="product-item-link">
+                                            <div class="product-item__img"
+                                                style="background-image: url(https://cf.shopee.vn/file/b54739fbb69dcb6d087f1829b74bcc9d_tn);">
+                                            </div>
+                                            <div class="product-item__desc">
+                                                <h4 class="product-item__name">Nồi điện đa năng Lock&Lock 0.8L, 220V, 50Hz, 600W - màu đen - EJP116BLK</h4>
+                                                <div class="product-item__info">Mua Kèm Deal Sốc</div>
+                                                <div class="product-item__price">
+                                                    <span class="product-item__price-old">₫830.000</span>
+                                                    <span class="product-item__price-current">₫432.000</span>
+                                                    <img src="./assets/img/container/products/free_ship.svg"
+                                                        alt="free ship icon"
+                                                        class="product-item__price-img product-item__price-img--active">
+                                                </div>
+                                                <div class="product-item__action">
+                                                    <span class="product-item__like">
+                                                        <i class="product-item__like-icon-empty far fa-heart"></i>
+                                                        <i class="product-item__like-icon-solid fas fa-heart"></i>
+                                                    </span>
+                                                    <div class="product-item__rating product-item__rating--active">
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                    </div>
+                                                    <span class="product-item__sold product-item__sold--active">Đã bán 1,2k</span>
+                                                </div>
+                                                <div class="product-item__origin">
+                                                    <span class="product-item__brand">Lock&Lock</span>
+                                                    <span class="product-item__origin-name">TP. Hồ Chí Minh</span>
+                                                </div>
+                                            </div>
+                                            <div class="product-item__favourite">
+                                                <span>Yêu thích+</span>
+                                            </div>
+                                            <div class="product-item__sale-off">
+                                                <span class="product-item__sale-off-percent">48%</span>
+                                                <span class="product-item__sale-off-label">GIẢM</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="grid__column-2-4">
+                                    <div class="product-item">
+                                        <a href="#" class="product-item-link">
+                                            <div class="product-item__img"
+                                                style="background-image: url(https://cf.shopee.vn/file/280b7d4a538df9c6a9283d858e7f6189_tn);">
+                                            </div>
+                                            <div class="product-item__desc">
+                                                <h4 class="product-item__name">Nồi điện đa năng Lock&Lock 0.8L, 220V, 50Hz, 600W - màu đen - EJP116BLK</h4>
+                                                <div class="product-item__info">Mua Kèm Deal Sốc</div>
+                                                <div class="product-item__price">
+                                                    <span class="product-item__price-old">₫399.000</span>
+                                                    <span class="product-item__price-current">₫243.000</span>
+                                                    <img src="./assets/img/container/products/free_ship.svg"
+                                                        alt="free ship icon"
+                                                        class="product-item__price-img product-item__price-img--active">
+                                                </div>
+                                                <div class="product-item__action">
+                                                    <span class="product-item__like">
+                                                        <i class="product-item__like-icon-empty far fa-heart"></i>
+                                                        <i class="product-item__like-icon-solid fas fa-heart"></i>
+                                                    </span>
+                                                    <div class="product-item__rating product-item__rating--active">
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                    </div>
+                                                    <span class="product-item__sold product-item__sold--active">Đã bán 4,5k</span>
+                                                </div>
+                                                <div class="product-item__origin">
+                                                    <span class="product-item__brand">Lock&Lock</span>
+                                                    <span class="product-item__origin-name">TP. Hồ Chí Minh</span>
+                                                </div>
+                                            </div>
+                                            <div class="product-item__favourite">
+                                                <span>Yêu thích+</span>
+                                            </div>
+                                            <div class="product-item__sale-off">
+                                                <span class="product-item__sale-off-percent">39%</span>
+                                                <span class="product-item__sale-off-label">GIẢM</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="grid__column-2-4">
+                                    <div class="product-item">
+                                        <a href="#" class="product-item-link">
+                                            <div class="product-item__img"
+                                                style="background-image: url(https://cf.shopee.vn/file/725e8531249ccad4b7485613e893b33a_tn);">
+                                            </div>
+                                            <div class="product-item__desc">
+                                                <h4 class="product-item__name">Nồi Chiên Không Dầu Điện Tử Lock&Lock ECF-300B</h4>
+                                                <div class="product-item__info">Mua Kèm Deal Sốc</div>
+                                                <div class="product-item__price">
+                                                    <span class="product-item__price-old">₫4.300.000</span>
+                                                    <span class="product-item__price-current">₫2.150.000</span>
+                                                    <img src="./assets/img/container/products/free_ship.svg"
+                                                        alt="free ship icon"
+                                                        class="product-item__price-img product-item__price-img--active">
+                                                </div>
+                                                <div class="product-item__action">
+                                                    <span class="product-item__like">
+                                                        <i class="product-item__like-icon-empty far fa-heart"></i>
+                                                        <i class="product-item__like-icon-solid fas fa-heart"></i>
+                                                    </span>
+                                                    <div class="product-item__rating product-item__rating--active">
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                    </div>
+                                                    <span class="product-item__sold product-item__sold--active">Đã bán 2,9k</span>
+                                                </div>
+                                                <div class="product-item__origin">
+                                                    <span class="product-item__brand">Lock&Lock</span>
+                                                    <span class="product-item__origin-name">TP. Hồ Chí Minh</span>
+                                                </div>
+                                            </div>
+                                            <div class="product-item__favourite">
+                                                <span>Yêu thích+</span>
+                                            </div>
+                                            <div class="product-item__sale-off">
+                                                <span class="product-item__sale-off-percent">50%</span>
+                                                <span class="product-item__sale-off-label">GIẢM</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="grid__column-2-4">
+                                    <div class="product-item">
+                                        <a href="#" class="product-item-link">
+                                            <div class="product-item__img"
+                                                style="background-image: url(https://cf.shopee.vn/file/d208635763789d23c03de431c908c34b_tn);">
+                                            </div>
+                                            <div class="product-item__desc">
+                                                <h4 class="product-item__name">[Mã LIFELL10 giảm 8% tối đa 100K đơn 300K] Khay Silicone dành cho nồi chiên không dầu 5L và lò vi sóng Lock&Lock -CKB002</h4>
+                                                <div class="product-item__info">Mua Kèm Deal Sốc</div>
+                                                <div class="product-item__price">
+                                                    <span class="product-item__price-old">₫368.000</span>
+                                                    <span class="product-item__price-current">₫221.000</span>
+                                                    <img src="./assets/img/container/products/free_ship.svg"
+                                                        alt="free ship icon"
+                                                        class="product-item__price-img product-item__price-img--active">
+                                                </div>
+                                                <div class="product-item__action">
+                                                    <span class="product-item__like">
+                                                        <i class="product-item__like-icon-empty far fa-heart"></i>
+                                                        <i class="product-item__like-icon-solid fas fa-heart"></i>
+                                                    </span>
+                                                    <div class="product-item__rating product-item__rating--active">
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                    </div>
+                                                    <span class="product-item__sold product-item__sold--active">Đã bán 494</span>
+                                                </div>
+                                                <div class="product-item__origin">
+                                                    <span class="product-item__brand">Lock&Lock</span>
+                                                    <span class="product-item__origin-name">TP. Hồ Chí Minh</span>
+                                                </div>
+                                            </div>
+                                            <div class="product-item__favourite">
+                                                <span>Yêu thích+</span>
+                                            </div>
+                                            <div class="product-item__sale-off">
+                                                <span class="product-item__sale-off-percent">40%</span>
+                                                <span class="product-item__sale-off-label">GIẢM</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="grid__column-2-4">
+                                    <div class="product-item">
+                                        <a href="#" class="product-item-link">
+                                            <div class="product-item__img"
+                                                style="background-image: url(https://cf.shopee.vn/file/d8590ae9fa3656b48493ca1cb3c18517_tn);">
+                                            </div>
+                                            <div class="product-item__desc">
+                                                <h4 class="product-item__name">[Mã LIFELL10 giảm 8% tối đa 100K đơn 300K] Dao gọt trái cây 4" bằng thép nhựa ABS, AS, PP,Lock&Lock - CKK501WHT</h4>
+                                                <div class="product-item__info">Mua Kèm Deal Sốc</div>
+                                                <div class="product-item__price">
+                                                    <span class="product-item__price-old">₫62.000</span>
+                                                    <span class="product-item__price-current">₫40.000</span>
+                                                    <img src="./assets/img/container/products/free_ship.svg"
+                                                        alt="free ship icon"
+                                                        class="product-item__price-img product-item__price-img--active">
+                                                </div>
+                                                <div class="product-item__action">
+                                                    <span class="product-item__like">
+                                                        <i class="product-item__like-icon-empty far fa-heart"></i>
+                                                        <i class="product-item__like-icon-solid fas fa-heart"></i>
+                                                    </span>
+                                                    <div class="product-item__rating product-item__rating--active">
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                    </div>
+                                                    <span class="product-item__sold product-item__sold--active">Đã bán 1,1k</span>
+                                                </div>
+                                                <div class="product-item__origin">
+                                                    <span class="product-item__brand">Lock&Lock</span>
+                                                    <span class="product-item__origin-name">TP. Hồ Chí Minh</span>
+                                                </div>
+                                            </div>
+                                            <div class="product-item__favourite">
+                                                <span>Yêu thích+</span>
+                                            </div>
+                                            <div class="product-item__sale-off">
+                                                <span class="product-item__sale-off-percent">35%</span>
+                                                <span class="product-item__sale-off-label">GIẢM</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="grid__column-2-4">
+                                    <div class="product-item">
+                                        <a href="#" class="product-item-link">
+                                            <div class="product-item__img"
+                                                style="background-image: url(https://cf.shopee.vn/file/b99a4d6efdda3de6c252de78e77b85be_tn);">
+                                            </div>
+                                            <div class="product-item__desc">
+                                                <h4 class="product-item__name">[Mã ELLOCK10 giảm 5% đơn 500k] Nồi chiên không dầu Lock&Lock 3.0L, 1400W, 220-240V, 50/60Hz, Màu đen EJF276</h4>
+                                                <div class="product-item__info">Mua Kèm Deal Sốc</div>
+                                                <div class="product-item__price">
+                                                    <span class="product-item__price-old">₫4.095.000</span>
+                                                    <span class="product-item__price-current">₫1.990.000</span>
+                                                    <img src="./assets/img/container/products/free_ship.svg"
+                                                        alt="free ship icon"
+                                                        class="product-item__price-img product-item__price-img--active">
+                                                </div>
+                                                <div class="product-item__action">
+                                                    <span class="product-item__like">
+                                                        <i class="product-item__like-icon-empty far fa-heart"></i>
+                                                        <i class="product-item__like-icon-solid fas fa-heart"></i>
+                                                    </span>
+                                                    <div class="product-item__rating product-item__rating--active">
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                    </div>
+                                                    <span class="product-item__sold product-item__sold--active">Đã bán 2,1k</span>
+                                                </div>
+                                                <div class="product-item__origin">
+                                                    <span class="product-item__brand">Lock&Lock</span>
+                                                    <span class="product-item__origin-name">TP. Hồ Chí Minh</span>
+                                                </div>
+                                            </div>
+                                            <div class="product-item__favourite">
+                                                <span>Yêu thích+</span>
+                                            </div>
+                                            <div class="product-item__sale-off">
+                                                <span class="product-item__sale-off-percent">51%</span>
+                                                <span class="product-item__sale-off-label">GIẢM</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="grid__column-2-4">
+                                    <div class="product-item">
+                                        <a href="#" class="product-item-link">
+                                            <div class="product-item__img"
+                                                style="background-image: url(https://cf.shopee.vn/file/b99a4d6efdda3de6c252de78e77b85be_tn);">
+                                            </div>
+                                            <div class="product-item__desc">
+                                                <h4 class="product-item__name">[Mã LIFELL10 giảm 8% tối đa 100K đơn 300K] Ly nhựa có ống hút Lock&Lock, 750ml - Màu Xanh nước biển HAP507BLU</h4>
+                                                <div class="product-item__info">Mua Kèm Deal Sốc</div>
+                                                <div class="product-item__price">
+                                                    <span class="product-item__price-old">₫197.000</span>
+                                                    <span class="product-item__price-current">₫102.000</span>
+                                                    <img src="./assets/img/container/products/free_ship.svg"
+                                                        alt="free ship icon"
+                                                        class="product-item__price-img product-item__price-img--active">
+                                                </div>
+                                                <div class="product-item__action">
+                                                    <span class="product-item__like">
+                                                        <i class="product-item__like-icon-empty far fa-heart"></i>
+                                                        <i class="product-item__like-icon-solid fas fa-heart"></i>
+                                                    </span>
+                                                    <div class="product-item__rating product-item__rating--active">
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                        <i class="product-item__rating--gold fas fa-star"></i>
+                                                    </div>
+                                                    <span class="product-item__sold product-item__sold--active">Đã bán 3k</span>
+                                                </div>
+                                                <div class="product-item__origin">
+                                                    <span class="product-item__brand">Lock&Lock</span>
+                                                    <span class="product-item__origin-name">TP. Hồ Chí Minh</span>
+                                                </div>
+                                            </div>
+                                            <div class="product-item__favourite">
+                                                <span>Yêu thích+</span>
+                                            </div>
+                                            <div class="product-item__sale-off">
+                                                <span class="product-item__sale-off-percent">48%</span>
+                                                <span class="product-item__sale-off-label">GIẢM</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer"></footer>
+    </div>
+
+    <div class="modal">
+        <div class="modal__overlay"></div>
+        <div class="modal__body">
+            <!-- Register Form -->
+            <div class="auth-form register-form">
+                <div class="auth-form__closeBtn">
+                    <i class="fas fa-times auth-form__closeBtn-icon"></i>
+                </div>
+
+                <div class="auth-form__container">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">Đăng Ký</h3>
+                    </div>
+
+                    <div class="auth-form__inputs">
+                        <div class="auth-form__group">
+                            <input type="text" placeholder="Số điện thoại"
+                                class="auth-form__input auth-form__input-js">
+                            <div class="auth-form__inputs-msg">Số điện thoại không hợp lệ</div>
+                        </div>
+
+                        <div class="auth-form__group">
+                            <input type="submit" value="TIẾP THEO" disabled
+                                class="auth-form__input auth-form__input-btn-js auth-form__input--btn">
+                        </div>
+                    </div>
+
+                    <div class="auth-form__separates">
+                        <div class="auth-form__separate"></div>
+                        <p class="auth-form__separate-text">Hoặc</p>
+                        <div class="auth-form__separate"></div>
+                    </div>
+
+                    <div class="auth-form__socials">
+                        <button class="btn auth-form__socials-btn auth-form__socials-btn--facebook">
+                            <i class="fab fa-facebook auth-form__socials-btn-icon"></i>
+                            <span class="auth-form__socials-label">Facebook</span>
+                        </button>
+                        <button class="btn auth-form__socials-btn auth-form__socials-btn--google">
+                            <div class="auth-form__socials-btn-icon auth-form__socials-google-svg"></div>
+                            <span class="auth-form__socials-label">Google</span>
+                        </button>
+                        <button class="btn auth-form__socials-btn auth-form__socials-btn--apple">
+                            <i class="fab fa-apple auth-form__socials-btn-icon"></i>
+                            <span class="auth-form__socials-label">Apple</span>
+                        </button>
+                    </div>
+
+                    <div class="auth-form__policy">
+                        <p class="auth-form__policy-content">
+                            Bằng việc đăng kí, bạn đã đồng ý với Shopee về
+                            <a href="#" class="auth-form__policy-link">Điều khoản dịch vụ </a> &
+                            <a href="#" class="auth-form__policy-link">Chính sách bảo mật</a>
+                        </p>
+                    </div>
+
+                    <div class="auth-form__help">
+                        <p class="auth-form__help-text">Bạn đã có tài khoản? <a href="#"
+                                class="auth-form__help-link auth-form__help-login">Đăng nhập</a></p>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Login Form -->
+            <div class="auth-form login-form">
+                <div class="auth-form__closeBtn">
+                    <i class="fas fa-times auth-form__closeBtn-icon"></i>
+                </div>
+
+                <div class="auth-form__container">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">Đăng Nhập</h3>
+                    </div>
+
+                    <div class="auth-form__inputs">
+                        <div class="auth-form__group">
+                            <input type="text" placeholder="Email/Số điện thoại/Tên đăng nhập"
+                                class="auth-form__input auth-form__input-js">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" placeholder="Mật khẩu" maxlength="16"
+                                class="auth-form__input auth-form__input-js">
+                            <i class="fas fa-eye-slash auth-form__password-icon"></i>
+                        </div>
+
+                        <div class="auth-form__group">
+                            <input type="submit" value="ĐĂNG NHẬP" disabled
+                                class="auth-form__input auth-form__input-btn-js auth-form__input--btn">
+                        </div>
+                    </div>
+
+                    <div class="auth-form__options">
+                        <a href="#" class="auth-form__option">Quên mật khẩu</a>
+                        <a href="#" class="auth-form__option">Đăng nhập với SMS</a>
+                    </div>
+
+                    <div class="auth-form__separates">
+                        <div class="auth-form__separate"></div>
+                        <p class="auth-form__separate-text">Hoặc</p>
+                        <div class="auth-form__separate"></div>
+                    </div>
+
+                    <div class="auth-form__socials">
+                        <button class="btn auth-form__socials-btn auth-form__socials-btn--facebook">
+                            <i class="fab fa-facebook auth-form__socials-btn-icon"></i>
+                            <span class="auth-form__socials-label">Facebook</span>
+                        </button>
+                        <button class="btn auth-form__socials-btn auth-form__socials-btn--google">
+                            <div class="auth-form__socials-btn-icon auth-form__socials-google-svg"></div>
+                            <span class="auth-form__socials-label">Google</span>
+                        </button>
+                        <button class="btn auth-form__socials-btn auth-form__socials-btn--apple">
+                            <i class="fab fa-apple auth-form__socials-btn-icon"></i>
+                            <span class="auth-form__socials-label">Apple</span>
+                        </button>
+                    </div>
+
+                    <div class="auth-form__help">
+                        <p class="auth-form__help-text">Bạn mới biết đến Shopee? <a href="#"
+                                class="auth-form__help-link auth-form__help-register">Đăng ký</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
