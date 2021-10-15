@@ -5,6 +5,7 @@
   --second-text-color: #555;
   --primary-color: #ee4d2d;
   --star-gold-color: #ffce3d;
+  --btn-active-hover: #f05d40;
 
   --header-height: 120px;
   --navbar-height: 34px;
@@ -45,6 +46,12 @@ html {
   padding-left: 5px;
   padding-right: 5px;
   width: 16.6667%;
+}
+
+.grid__column-4 {
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 33.333%;
 }
 
 .grid__column-2-4 {
@@ -207,4 +214,45 @@ html {
 
 .select-input__item--active .select-input__item-icon {
   display: block;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.pagination-item--active .pagination-item__btn {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+
+
+.pagination-item--active .pagination-item__btn:hover {
+  background-color: var(--btn-active-hover);
+}
+
+.pagination-item + .pagination-item {
+  margin-left: 30px;
+}
+
+.pagination-item__btn {
+  --height: 30px;
+  min-width: 40px;
+  height: var(--height);
+  background-color: #f5f5f5;
+  color: #939393;
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: var(--height);
+}
+
+.pagination-item__btn--ellipsis {
+  cursor: default;
+}
+
+.pagination-item__icon {
+  font-size: 1.4rem;
 }
