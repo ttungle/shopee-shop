@@ -908,7 +908,7 @@
 }
 
 .header-search__cart-product-list {
-  height: 32vh;
+  max-height: 32vh;
   padding: 0;
   margin: 0;
   overflow-y: auto;
