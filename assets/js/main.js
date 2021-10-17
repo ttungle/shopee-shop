@@ -17,6 +17,8 @@ const authFormRegisterValidateMsg = $(".auth-form__inputs-msg");
 const authFormLoginInputs = $$(".login-form .auth-form__input-js");
 const authFormLoginBtn = $(".login-form .auth-form__input-btn-js");
 const authFormPwIcon = $(".auth-form__password-icon");
+const authFormLogoutBtn = $(".header__navbar-user-item-logout");
+const authFormUserNavItem = $(".header__navbar-item-user-js");
 const searchSelections = $$(".header-search__dropdown-item");
 const searchLabel = $(".header-search__dropdown-label");
 const searchHistoryContainer = $(".header-search__history");
@@ -28,82 +30,13 @@ const searchCartItems = $$(".header-search__cart-product-item");
 const searchCartType = $(".header-search__cart-list");
 const searchCartNotify = $(".header-search__cart-notify");
 const categorySortItemCheckBox = $$(".category-sort-item");
-const categorySortMore = $(".category-sort__more");
-const categorySortListContainer = $(".category-sort-items");
-const categoryMainItems = $$('.category-item');
+const categorySortMore = $$(".category-sort__more");
+const categoryMainItems = $$(".category-item");
+const filterSelectInput = $$(".select-input__item");
+const filterSelectLabel = $(".select-input__label");
+const filterBtns = $$(".home-filter__btn");
 
 const app = {
-  categorySortListData: [
-    {
-      id: 1,
-      name: "Sữa rửa mặt",
-      quantity: 26,
-    },
-    {
-      id: 2,
-      name: "Bộ sản phẩm làm đẹp",
-      quantity: 24,
-    },
-    {
-      id: 3,
-      name: "Sản phẩm dưỡng mắt",
-      quantity: 23,
-    },
-    {
-      id: 4,
-      name: "Kem chống nắng cho mặt",
-      quantity: 17,
-    },
-    {
-      id: 5,
-      name: "Mặt nạ",
-      quantity: 16,
-    },
-    {
-      id: 6,
-      name: "Tẩy tế bào chết",
-      quantity: 8,
-    },
-    {
-      id: 7,
-      name: "Chăm sóc tóc",
-      quantity: 6,
-    },
-    {
-      id: 8,
-      name: "Dầu dưỡng ẩm",
-      quantity: 6,
-    },
-  ],
-
-  //render category sort list when clicking more
-  renderCategorySortMore: function (categoryData) {
-    categoryData.forEach((item) => {
-      const node = document.createElement("li");
-      node.innerHTML = `
-        <div class="category-sort-item__checkbox">
-          <i class="fas fa-check category-sort-item__icon"></i>
-        </div>
-        <p class="category-sort-item__value">${item.name} (${item.quantity})</p>
-      `;
-
-      node.setAttribute(
-        "class",
-        `category-sort-item category-sort-item__more-${item.id}`
-      );
-      node.setAttribute("onclick", `app.checkCategoryBox(${item.id})`);
-      node.setAttribute("animation", "opacityIncrease 0.2s ease");
-      categorySortListContainer.appendChild(node);
-    });
-  },
-
-  //handle check category checkbox
-  checkCategoryBox: function (id) {
-    $(`.category-sort-item__more-${id}`).classList.toggle(
-      "category-sort-item__checked"
-    );
-  },
-
   handleEvents: function () {
     const _this = this;
 
@@ -154,7 +87,6 @@ const app = {
     modalBody.onclick = function (e) {
       e.stopPropagation();
     };
-
     modal.onclick = function () {
       _this.resetAuthForm();
     };
@@ -274,22 +206,69 @@ const app = {
     });
 
     //handle when clicking category more btn
-    categorySortMore.onclick = function () {
-      categorySortListContainer.style.display = "block";
-      categorySortListContainer.style.animation = "opacityIncrease 0.3s ease";
-      _this.renderCategorySortMore(_this.categorySortListData);
-      categorySortMore.style.display = "none";
-    };
+    Array.from(categorySortMore).forEach((e) => {
+      e.onclick = function () {
+        if (e.classList.contains("category-sort__category")) {
+          e.previousElementSibling.style.display = "block";
+          e.style.display = "none";
+        } else {
+          e.previousElementSibling.style.display = "block";
+          e.style.display = "none";
+        }
+      };
+    });
 
     //handle when select category main items
-    Array.from(categoryMainItems).forEach((e)=>{
+    Array.from(categoryMainItems).forEach((e) => {
       e.onclick = function () {
-        Array.from(categoryMainItems).forEach((elementRS)=>{
-          elementRS.classList.remove('category-item--active');
+        Array.from(categoryMainItems).forEach((elementRS) => {
+          elementRS.classList.remove("category-item--active");
         });
-        e.classList.add('category-item--active');
-      }
+        e.classList.add("category-item--active");
+      };
     });
+
+    //handle when clicking home filter selections
+    Array.from(filterSelectInput).forEach((e) => {
+      e.onclick = function () {
+        Array.from(filterSelectInput).forEach((eReset) => {
+          eReset.classList.remove("select-input__item--active");
+        });
+
+        e.classList.add("select-input__item--active");
+        filterSelectLabel.classList.add("select-input__label--active");
+        filterSelectLabel.innerText = e.innerText;
+      };
+    });
+
+    //handle when clicking home filter btn
+    Array.from(filterBtns).forEach((e) => {
+      e.onclick = function () {
+        Array.from(filterBtns).forEach((eReset) => {
+          eReset.classList.remove("btn--primary");
+        });
+        e.classList.add("btn--primary");
+      };
+    });
+
+    //handle when clicking logout button
+    if (navBarLogin && navBarRegister) {
+      authFormLogoutBtn.onclick = function () {
+        authFormUserNavItem.style.display = "none";
+        navBarLogin.style.display = "inline-flex";
+        navBarRegister.style.display = "inline-flex";
+      };
+    };
+
+    //handle when clicking login btn 
+    authFormLoginBtn.onclick = function () {
+      if (authFormUserNavItem.offsetParent == null) {
+        navBarRegister.style.display = "none";
+        navBarLogin.style.display = "none";
+        _this.resetAuthForm();
+        authFormUserNavItem.style.display = "inline-flex";
+      }
+    };
   },
 
   resetAuthForm: function () {
@@ -304,7 +283,6 @@ const app = {
 
     authFormRegisterBtn.classList.remove("auth-form__input--active");
     authFormLoginBtn.classList.remove("auth-form__input--active");
-
     authFormRegisterValidateMsg.style.visibility = "";
     authFormRegisterInput.classList.remove("auth-form__input--validate");
   },

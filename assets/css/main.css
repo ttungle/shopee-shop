@@ -62,6 +62,10 @@
   color: rgba(255, 255, 255);
 }
 
+.header__navbar-register, .header__navbar-login {
+  display: none;
+}
+
 .header__navbar-icons {
   margin-left: 2px;
 }
@@ -1169,13 +1173,17 @@
 }
 
 /* category sort */
+.category-sub-container {
+  padding: 15px 0;
+}
+
 .category__heading--sub {
   padding: 0 20px;
 }
 
 .category-sort-list {
-  padding: 0 20px;
   list-style: none;
+  padding: 0;
 }
 
 .category-sort-item {
@@ -1183,14 +1191,13 @@
   align-items: flex-start;
   margin: 8px 0;
   cursor: pointer;
+  padding: 0 20px;
 }
 
-.category-sort-item:last-child {
-  margin-bottom: 30px;
-}
-
-.category-sort-items {
+.category-more {
   display: none;
+  margin: 0 0 30px;
+  padding: 0;
 }
 
 .category-sort-item__checkbox {
@@ -1227,13 +1234,71 @@
   cursor: pointer;
 }
 
-.category-sort__more--mb30 {
-  margin-bottom: 30px;
-}
-
 .category-sort__more-icon {
   font-size: 1rem;
   margin-left: 10px;
+}
+
+.category__range {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 20px;
+}
+
+.category__range-cross {
+  font-size: 1.4rem;
+  margin: 0 10px;
+  color: var(--second-text-color);
+}
+
+.category__range-input {
+  height: 30px;
+  min-width: 0;
+  font-size: 1.2rem;
+  padding: 0 4px;
+  outline: none;
+  border: 1px solid #bdbdbd;
+  color: var(--second-text-color);
+}
+
+/* Remove number input arrow */
+.category__range input::-webkit-outer-spin-button,
+.category__range input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.category__range input[type='number'] {
+  -moz-appearance:textfield;
+}
+
+.category__apply-btn, .category__remove {
+  --margin-width: 20px;
+  height: 30px;
+  width: calc(100% - 2 * var(--margin-width));
+  margin: 0 var(--margin-width);
+}
+
+.category-sort-item__link {
+  text-decoration: none;
+  color: transparent;
+}
+
+.category-sort-item__filled,
+.category-sort-item__empty  {
+  color: #fdb74f;
+  font-size: 1.2rem;
+  margin-right: 4px;
+}
+
+.category-sort-item__text {
+  color: var(--second-text-color);
+  font-size: 1.2rem;
+}
+
+.category__remove {
+  margin-bottom: 30px;
 }
 
 /* Home sort + filter */
@@ -1267,6 +1332,10 @@
 
 .home-filter__btn:hover {
   opacity: 0.9;
+}
+
+.select-input__label--active {
+  color: var(--primary-color);
 }
 
 .home-filter__page {
@@ -1712,7 +1781,7 @@ i.product-item__like-icon-solid {
 
 .footer-right__country {
   flex: 1;
-  margin-left: 56px;
+  margin-left: 46px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
