@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/normalize.css">
     <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
     <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="icon" href="./assets/img/favicon.ico/shopee_icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,8 +21,8 @@
 <body>
     <div class="app">
         <header class="header">
-            <div class="grid">
-                <nav class="header__navbar">
+            <div class="grid wide">
+                <nav class="header__navbar hide-on-mobile-tablet">
                     <ul class="header__navbar-list">
                         <li class="header__navbar-item"><a href="#"
                                 class="header__navbar-item-link header__navbar--separate">Kênh Người Bán</a></li>
@@ -166,7 +168,7 @@
                                 <i class="far fa-question-circle header__navbar-icon"></i>
                                 <span>Hỗ Trợ</span>
                             </a></li>
-                         <li class="header__navbar-item header__navbar-register"><a href="#"
+                        <li class="header__navbar-item header__navbar-register"><a href="#"
                                 class="header__navbar-item-link header__navbar--separate">Đăng Ký</a></li>
                         <li class="header__navbar-item header__navbar-login"><a href="#"
                                 class="header__navbar-item-link">Đăng Nhập</a></li>
@@ -179,7 +181,8 @@
                             <div class="header__navbar-user">
                                 <a href="#" class="header__navbar-user-item">Tài Khoản Của Tôi</a>
                                 <a href="#" class="header__navbar-user-item">Đơn Mua</a>
-                                <a href="#" class="header__navbar-user-item header__navbar-user-item-logout header__navbar-user-item--separate">Đăng
+                                <a href="#"
+                                    class="header__navbar-user-item header__navbar-user-item-logout header__navbar-user-item--separate">Đăng
                                     Xuất</a>
                             </div>
                         </li>
@@ -192,6 +195,7 @@
                         <a href="" class="header-search__logo-link">
                             <img src="./assets/img/header/search/shopee_logo.svg" alt="Shopee Logo"
                                 class="header-search__logo-img">
+                            <i class="fas fa-arrow-left header-search__logo-icon"></i>
                         </a>
                     </div>
 
@@ -204,7 +208,8 @@
                                     <h3 class="header-search__history-header">Lịch sử Tìm Kiếm</h3>
                                     <ul class="header-search__history-list">
                                         <li class="header-search__history-item"><a href="#">Lock&Lock</a></li>
-                                        <li class="header-search__history-item"><a href="#">lock & lock bình giữ nhiệt</a></li>
+                                        <li class="header-search__history-item"><a href="#">lock & lock bình giữ
+                                                nhiệt</a></li>
                                         <li class="header-search__history-item"><a href="#">Keycap</a></li>
                                         <li class="header-search__history-item"><a href="#">Bàn phím cơ</a></li>
                                         <li class="header-search__history-item"><a href="#">kê tay bàn phím</a></li>
@@ -236,7 +241,7 @@
                             </div>
                         </div>
 
-                        <ul class="header-search__suggest">
+                        <ul class="header-search__suggest hide-on-mobile-tablet">
                             <li class="header-search__suggestions-item"><a href="#"
                                     class="header-search__suggestions-item-link" data-toggle="dropdown">Bánh Trung
                                     Thu</a></li>
@@ -282,11 +287,13 @@
 
                                     <ul class="header-search__cart-product-list">
                                         <li class="header-search__cart-product-item">
-                                            <img src="https://cf.shopee.vn/file/b1e84912d5bd4c8336af37dc692b0a40_tn" alt="Sản Phẩm"
-                                                class="header-search__cart-product-img">
+                                            <img src="https://cf.shopee.vn/file/b1e84912d5bd4c8336af37dc692b0a40_tn"
+                                                alt="Sản Phẩm" class="header-search__cart-product-img">
                                             <div class="header-search__cart-product-info">
                                                 <div class="header-search__cart-product-head">
-                                                    <h5 class="header-search__cart-product-name">[Mã LIFELL10 giảm 8% tối đa 100K đơn 300K] Bình giữ nhiệt Lock&Lock Two-tone Clip 540ml LHC4151</h5>
+                                                    <h5 class="header-search__cart-product-name">[Mã LIFELL10 giảm 8%
+                                                        tối đa 100K đơn 300K] Bình giữ nhiệt Lock&Lock Two-tone Clip
+                                                        540ml LHC4151</h5>
                                                     <div class="header__cart-product-price-wrap">
                                                         <span class="header-search__cart-product-price">₫239.000</span>
                                                         <span class="header-search__cart-product-times">x</span>
@@ -299,11 +306,12 @@
                                             </div>
                                         </li>
                                         <li class="header-search__cart-product-item">
-                                            <img src="https://cf.shopee.vn/file/239472a7144f757d5b4015c21ccf79f4_tn" alt="Sản Phẩm"
-                                                class="header-search__cart-product-img">
+                                            <img src="https://cf.shopee.vn/file/239472a7144f757d5b4015c21ccf79f4_tn"
+                                                alt="Sản Phẩm" class="header-search__cart-product-img">
                                             <div class="header-search__cart-product-info">
                                                 <div class="header-search__cart-product-head">
-                                                    <h5 class="header-search__cart-product-name">Bàn chải đánh răng điện Lock&Lock sạc không dây ENR346 (màu trắng & màu đen)
+                                                    <h5 class="header-search__cart-product-name">Bàn chải đánh răng điện
+                                                        Lock&Lock sạc không dây ENR346 (màu trắng & màu đen)
                                                     </h5>
                                                     <div class="header__cart-product-price-wrap">
                                                         <span class="header-search__cart-product-price">₫809.000</span>
@@ -317,14 +325,17 @@
                                             </div>
                                         </li>
                                         <li class="header-search__cart-product-item">
-                                            <img src="https://cf.shopee.vn/file/93f70147b6b22ec616391c601a007dae_tn" alt="Sản Phẩm"
-                                                class="header-search__cart-product-img">
+                                            <img src="https://cf.shopee.vn/file/93f70147b6b22ec616391c601a007dae_tn"
+                                                alt="Sản Phẩm" class="header-search__cart-product-img">
                                             <div class="header-search__cart-product-info">
                                                 <div class="header-search__cart-product-head">
-                                                    <h5 class="header-search__cart-product-name">[Mã ELLOCK101 giảm 5% đơn 500k] Nồi Chiên
-                                                        Không Dầu Lock&Lock Super Jumbo Plus Air Fryer 7.2L Màu đen EJF296BLK</h5>
+                                                    <h5 class="header-search__cart-product-name">[Mã ELLOCK101 giảm 5%
+                                                        đơn 500k] Nồi Chiên
+                                                        Không Dầu Lock&Lock Super Jumbo Plus Air Fryer 7.2L Màu đen
+                                                        EJF296BLK</h5>
                                                     <div class="header__cart-product-price-wrap">
-                                                        <span class="header-search__cart-product-price">₫2.880.000</span>
+                                                        <span
+                                                            class="header-search__cart-product-price">₫2.880.000</span>
                                                         <span class="header-search__cart-product-times">x</span>
                                                         <span class="header-search__cart-product-qnt">1</span>
                                                     </div>
@@ -335,11 +346,12 @@
                                             </div>
                                         </li>
                                         <li class="header-search__cart-product-item">
-                                            <img src="https://cf.shopee.vn/file/5df4ea5b154ef950c1494412510529da_tn" alt="Sản Phẩm"
-                                                class="header-search__cart-product-img">
+                                            <img src="https://cf.shopee.vn/file/5df4ea5b154ef950c1494412510529da_tn"
+                                                alt="Sản Phẩm" class="header-search__cart-product-img">
                                             <div class="header-search__cart-product-info">
                                                 <div class="header-search__cart-product-head">
-                                                    <h5 class="header-search__cart-product-name">Bình Đun Siêu Tốc Lock&Lock (1.7L) Trắng
+                                                    <h5 class="header-search__cart-product-name">Bình Đun Siêu Tốc
+                                                        Lock&Lock (1.7L) Trắng
                                                         EJK738WHT
                                                     </h5>
                                                     <div class="header__cart-product-price-wrap">
@@ -354,11 +366,12 @@
                                             </div>
                                         </li>
                                         <li class="header-search__cart-product-item">
-                                            <img src="https://cf.shopee.vn/file/bb92dbacaae4da59d2dd007c4e2835cb_tn" alt="Sản Phẩm"
-                                                class="header-search__cart-product-img">
+                                            <img src="https://cf.shopee.vn/file/bb92dbacaae4da59d2dd007c4e2835cb_tn"
+                                                alt="Sản Phẩm" class="header-search__cart-product-img">
                                             <div class="header-search__cart-product-info">
                                                 <div class="header-search__cart-product-head">
-                                                    <h5 class="header-search__cart-product-name">[Mã ELLOCK10 giảm 5% đơn 500k] Bếp Nướng Điện Lock&Lock Electric Grill (2000W) EJG231
+                                                    <h5 class="header-search__cart-product-name">[Mã ELLOCK10 giảm 5%
+                                                        đơn 500k] Bếp Nướng Điện Lock&Lock Electric Grill (2000W) EJG231
                                                     </h5>
                                                     <div class="header__cart-product-price-wrap">
                                                         <span class="header-search__cart-product-price">₫857.000</span>
@@ -382,10 +395,30 @@
                     </div>
                 </div>
             </div>
+            <ul class="header__sort-bar">
+                <li class="header__sort-item">
+                    <a href="" class="header__sort-link">Phổ Biến</a>
+                </li>
+                <li class="header__sort-item">
+                    <a href="" class="header__sort-link">Mới Nhất</a>
+                </li>
+                <li class="header__sort-item">
+                    <a href="" class="header__sort-link">Bán Chạy</a>
+                </li>
+                <li class="header__sort-item">
+                    <a href="" class="header__sort-link">
+                        Giá
+                        <span class="header__sort-icon-container">
+                            <i class="fas fa-chevron-up header__sort-icon"></i>
+                            <i class="fas fa-chevron-down header__sort-icon"></i>
+                        </span>
+                    </a>
+                </li>
+            </ul>
         </header>
 
         <div class="app__container">
-            <div class="grid">
+            <div class="grid wide">
                 <a href="#" class="category__back-link">
                     <i class="fas fa-chevron-left category__back-link-icon"></i>
                     Trở lại trang của shop
@@ -807,7 +840,7 @@
                     </div>
 
                     <div class="grid__column-10">
-                        <div class="home-filter">
+                        <div class="home-filter hide-on-mobile-tablet">
                             <div class="home-filter__container">
                                 <span class="home-filter__label">Sắp xếp theo</span>
                                 <button class="home-filter__btn btn btn--primary">Phổ Biến</button>
@@ -2369,7 +2402,7 @@
             </div>
 
             <div class="footer-info">
-                <div class="grid">
+                <div class="grid wide">
                     <div class="grid__row footer__container">
                         <div class="grid__column-2-4">
                             <h3 class="footer__heading">Chăm sóc khách hàng</h3>
