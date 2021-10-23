@@ -17,6 +17,11 @@
     z-index: 10;
   }
 
+  .header-search {
+    height: var(--header-height);
+    padding: 0;
+  }
+
   .header-search__logo {
     margin: 0;
     text-align: left;
@@ -37,8 +42,40 @@
     color: var(--white-color);
   }
 
+  .header-search__history,
+  .header-search__dropdown-options {
+    z-index: 11;
+  }
+
   .header-search__cart-list {
-    width: 625px;
+    width: 100vw;
+    position: fixed;
+    top: calc(var(--header-height) + var(--header-sort-bar-height));
+    left: 0;
+    right: 0;
+    max-height: 100%;
+    overflow: hidden;
+    padding: 0 calc((100% - 644px) / 2);
+    animation: slideInDown 0.3s ease-in;
+  }
+
+  .header-search__cart-list::before {
+    display: none;
+  }
+
+  @keyframes slideInDown {
+    from {
+      opacity: 0.6;
+      max-height: 0;
+    }
+    to {
+      opacity: 1;
+      max-height: 100%;
+    }
+  }
+
+  .header__sort-bar {
+    display: flex;
   }
 
   .app__content {
