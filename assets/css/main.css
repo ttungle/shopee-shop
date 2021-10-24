@@ -584,8 +584,10 @@
   color: var(--white-color);
 }
 
-.header-search__logo-icon {
+i.header-search__logo-icon {
   display: none;
+  font-size: 2rem;
+  color: var(--white-color);
 }
 
 .header-search__box {
@@ -813,7 +815,8 @@
   margin: auto;
 }
 
-.header-search__cart-icon {
+.header-search__cart-icon,
+.header-search__cart-icon i {
   position: relative;
   color: var(--white-color);
   text-decoration: none;
@@ -1013,6 +1016,95 @@
 
 .header-search__cart-product-btn:hover {
   background-color: var(--btn-active-hover);
+}
+
+/* Header more icon mobile */
+.header-mobile__-more {
+  padding: 12px;
+}
+
+i.header-mobile__-more-icon {
+  font-size: 1.6rem;
+  color: var(--primary-color);
+}
+
+.header-mobile__overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 12;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.header-mobile__category {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 12;
+  width: 68%;
+  height: 100vh;
+  background: var(--white-color);
+}
+
+.header-mobile__heading {
+  height: 44px;
+  padding: 0 12px;
+  background-color: #f5f5f5;
+  line-height: 44px;
+}
+
+.header-mobile__heading h3{
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+.header-mobile__filter-heading {
+  position: relative; 
+  color: var(--text-color);
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin: 16px 0 4px;
+  padding: 0 12px;
+}
+
+.header-mobile__filter-list {
+  list-style: none;
+  padding: 0 12px;
+  margin: 0;
+}
+
+.header-mobile__filter-heading::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -16px;
+  left: 0;
+  right: 0;
+  border-top: 1px solid #ccc;
+}
+
+.header-mobile__filter-value{
+  padding: 10px 0;
+  background-color: #f5f5f5;
+  font-size: 1.2rem;
+  color: var(--text-color);
+  text-align: center;
+  margin-top: 8px;
+  border-radius: 2px;
+}
+
+.header-mobile__filter-more {
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 1.2rem;
+  color: var(--second-text-color);
 }
 
 /* Header sort tablet mobile */

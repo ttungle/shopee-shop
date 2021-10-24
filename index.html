@@ -393,6 +393,12 @@
                             </div>
                         </div>
                     </div>
+
+                    <label for="header-mobile__checkbox" class="header-mobile__more">
+                        <i class="fas fa-ellipsis-h header-mobile__more-icon"></i>
+                    </label>
+                    
+                    <input type="checkbox" id="header-mobile__checkbox" hidden>       
                 </div>
             </div>
             <ul class="header__sort-bar">
@@ -417,6 +423,35 @@
             </ul>
         </header>
 
+    <label for="header-mobile__checkbox" class="header-mobile__overlay"></label>
+    <div class="header-mobile__category">
+        <div class="header-mobile__heading">
+        <h3>Bộ lọc tìm kiếm</h3>
+        </div>
+        <div class="header-mobile__filter">
+            <h3 class="header-mobile__filter-heading">Danh Mục</h3>
+            <ul class="header-mobile__filter-list row">
+                <li class="col c-6">
+                    <div class="header-mobile__filter-value">Bình Giữ Nhiệt (83)</div>
+                </li>
+                <li class="col c-6">
+                    <div class="header-mobile__filter-value">Nồi Chiên (81)</div>
+                </li>
+                <li class="col c-6">
+                    <div class="header-mobile__filter-value">Bình Giữ Nhiệt (83)</div>
+                </li>
+                <li class="col c-6">
+                    <div class="header-mobile__filter-value">Nồi Chiên (81)</div>
+                </li>
+            </ul>
+            <div class="header-mobile__filter-more">
+                Hiển thị nhiều hơn
+                <i class="fas fa-chevron-down category-sort__more-icon"></i>
+            </div>
+        </div>
+    </div>         
+
+
         <div class="app__container">
             <div class="grid wide">
                 <a href="#" class="category__back-link">
@@ -426,7 +461,7 @@
 
                 <div class="grid__row app__content">
                     <div class="grid__column-2">
-                        <nav class="category">
+                        <nav class="category hide-on-mobile">
                             <div class="category__shop-avatar">
                                 <div class="category__shop-avatar-container">
                                     <a href="#" class="category__shop-avatar-link">
@@ -2334,7 +2369,7 @@
                             </div>
                         </div>
 
-                        <ul class="pagination home-pagination">
+                        <ul class="pagination home-pagination hide-on-mobile ">
                             <li class="pagination-item">
                                 <button class="pagination-item__btn btn">
                                     <i class="fas fa-chevron-left pagination-item__icon"></i>
