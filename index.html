@@ -393,12 +393,10 @@
                             </div>
                         </div>
                     </div>
-
+                    <!-- Mobile category btn -->
                     <label for="header-mobile__checkbox" class="header-mobile__more">
-                        <i class="fas fa-ellipsis-h header-mobile__more-icon"></i>
+                        <i class="fas fa-bars header-mobile__more-icon"></i>
                     </label>
-                    
-                    <input type="checkbox" id="header-mobile__checkbox" hidden>       
                 </div>
             </div>
             <ul class="header__sort-bar">
@@ -423,34 +421,190 @@
             </ul>
         </header>
 
-    <label for="header-mobile__checkbox" class="header-mobile__overlay"></label>
-    <div class="header-mobile__category">
-        <div class="header-mobile__heading">
-        <h3>Bộ lọc tìm kiếm</h3>
-        </div>
-        <div class="header-mobile__filter">
-            <h3 class="header-mobile__filter-heading">Danh Mục</h3>
-            <ul class="header-mobile__filter-list row">
-                <li class="col c-6">
-                    <div class="header-mobile__filter-value">Bình Giữ Nhiệt (83)</div>
-                </li>
-                <li class="col c-6">
-                    <div class="header-mobile__filter-value">Nồi Chiên (81)</div>
-                </li>
-                <li class="col c-6">
-                    <div class="header-mobile__filter-value">Bình Giữ Nhiệt (83)</div>
-                </li>
-                <li class="col c-6">
-                    <div class="header-mobile__filter-value">Nồi Chiên (81)</div>
-                </li>
-            </ul>
-            <div class="header-mobile__filter-more">
-                Hiển thị nhiều hơn
-                <i class="fas fa-chevron-down category-sort__more-icon"></i>
+        <!-- Mobile category -->
+        <input type="checkbox" id="header-mobile__checkbox">
+        <label for="header-mobile__checkbox" class="header-mobile__overlay"></label>
+        <div class="header-mobile__category">
+            <div class="header-mobile__user">
+                <img src="./assets/img/header/avatar/Avatar.png" alt="Mobile Avatar" class="header-mobile__user-avatar">
+                <div class="header-mobile__user-name">
+                    <p>Thanh Tung Le</p>
+                    <p>thanhtungle73@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="header-mobile__category-container">
+                <div class="header-mobile__navigation">
+
+                    <ul class="header-mobile__navigation-list">
+                        <li class="header-mobile__navigation-item">
+                            <i class="fas fa-home header-mobile__navigation-icon"></i>
+                            <span>Trang chủ</span>
+                        </li>
+                        <li class="header-mobile__navigation-item">
+                            <i class="fas fa-user-circle header-mobile__navigation-icon"></i>
+                            <span>Quản lý tài khoản</span>
+                        </li>
+                        <li class="header-mobile__navigation-item">
+                            <i class="fas fa-bell header-mobile__navigation-icon"></i>
+                            <span>Thông báo</span>
+                        </li>
+                        <li class="header-mobile__navigation-item">
+                            <i class="far fa-question-circle header-mobile__navigation-icon"></i>
+                            <span>Hỗ trợ</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header-mobile__heading">
+                    <h3>Bộ lọc tìm kiếm</h3>
+                </div>
+                <div class="header-mobile__filter">
+                    <div class="header-mobile__filter-item">
+                        <h3 class="header-mobile__filter-heading">Danh Mục</h3>
+                        <ul class="header-mobile__filter-list row">
+                            <li class="col c-6">
+                                <div class="header-mobile__filter-value">Bình Giữ Nhiệt (83)</div>
+                            </li>
+                            <li class="col c-6">
+                                <div class="header-mobile__filter-value">Nồi Chiên (81)</div>
+                            </li>
+                            <li class="col c-6">
+                                <div class="header-mobile__filter-value">Bình Giữ Nhiệt (83)</div>
+                            </li>
+                            <li class="col c-6">
+                                <div class="header-mobile__filter-value">Nồi Chiên (81)</div>
+                            </li>
+                        </ul>
+                        <div class="header-mobile__filter-more">
+                            Hiển thị nhiều hơn
+                            <i class="fas fa-chevron-down category-sort__more-icon"></i>
+                        </div>
+                    </div>
+
+                    <div class="header-mobile__filter-item">
+                        <h3 class="header-mobile__filter-heading">Vận Chuyển</h3>
+                        <ul class="header-mobile__filter-list row">
+                            <li class="col c-6">
+                                <div class="header-mobile__filter-value">Hỏa Tốc</div>
+                            </li>
+                            <li class="col c-6">
+                                <div class="header-mobile__filter-value">Nhanh</div>
+                            </li>
+                            <li class="col c-6">
+                                <div class="header-mobile__filter-value">Tiết kiệm</div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="header-mobile__filter-item">
+                        <h3 class="header-mobile__filter-heading">Thương hiệu</h3>
+                        <ul class="header-mobile__filter-list row">
+                            <li class="col c-6">
+                                <div class="header-mobile__filter-value">Lock&Lock</div>
+                            </li>
+                            <li class="col c-6">
+                                <div class="header-mobile__filter-value">Long Thành</div>
+                            </li>
+                            <li class="col c-6">
+                                <div class="header-mobile__filter-value">Philips</div>
+                            </li>
+                            <li class="col c-6">
+                                <div class="header-mobile__filter-value">Kangaroo</div>
+                            </li>
+                        </ul>
+                        <div class="header-mobile__filter-more">
+                            Hiển thị nhiều hơn
+                            <i class="fas fa-chevron-down category-sort__more-icon"></i>
+                        </div>
+                    </div>
+
+                    <div class="header-mobile__filter-item">
+                        <h3 class="header-mobile__filter-heading">Khoảng giá (₫)</h3>
+                        <div class="category__range">
+                            <input type="number" placeholder="TỐI THIỂU" class="category__range-input">
+                            <span class="header-mobile__range-cross"></span>
+                            <input type="number" placeholder="TỐI ĐA" class="category__range-input">
+                        </div>
+                        <div class="header-mobile__price-suggest">
+                            <div class="header-mobile__price-item">0-100k</div>
+                            <div class="header-mobile__price-item">100k-200k</div>
+                            <div class="header-mobile__price-item">200k-300k</div>
+                        </div>
+                    </div>
+
+                    <div class="header-mobile__filter-item">
+                        <h3 class="header-mobile__filter-heading">Loại shop</h3>
+                        <ul class="header-mobile__filter-list row">
+                            <li class="col c-6">
+                                <div class="header-mobile__filter-value">Shop yêu thích</div>
+                            </li>
+                            <li class="col c-6">
+                                <div class="header-mobile__filter-value">Shop yêu thích+</div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="header-mobile__filter-item">
+                        <h3 class="header-mobile__filter-heading">Tình trạng</h3>
+                        <ul class="header-mobile__filter-list row">
+                            <li class="col c-6">
+                                <div class="header-mobile__filter-value">Mới</div>
+                            </li>
+                            <li class="col c-6">
+                                <div class="header-mobile__filter-value">Đã sử dụng</div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="header-mobile__filter-item">
+                        <h3 class="header-mobile__filter-heading">Đánh giá</h3>
+                        <ul class="header-mobile__filter-list row">
+                            <li class="col c-6">
+                                <div class="header-mobile__filter-value">5 sao</div>
+                            </li>
+                            <li class="col c-6">
+                                <div class="header-mobile__filter-value">Từ 4 sao</div>
+                            </li>
+                            <li class="col c-6">
+                                <div class="header-mobile__filter-value">Từ 3 sao</div>
+                            </li>
+                            <li class="col c-6">
+                                <div class="header-mobile__filter-value">Từ 2 sao</div>
+                            </li>
+                            <li class="col c-6">
+                                <div class="header-mobile__filter-value">Từ 1 sao</div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="header-mobile__filter-item">
+                        <h3 class="header-mobile__filter-heading">Dịch vụ khuyến mãi</h3>
+                        <ul class="header-mobile__filter-list row">
+                            <li class="col c-6">
+                                <div class="header-mobile__filter-value">Freeship Xtra</div>
+                            </li>
+                            <li class="col c-6">
+                                <div class="header-mobile__filter-value">Hoàn xu Xtra</div>
+                            </li>
+                            <li class="col c-6">
+                                <div class="header-mobile__filter-value">Đang giảm giá</div>
+                            </li>
+                            <li class="col c-6">
+                                <div class="header-mobile__filter-value">Miễn phí vận chuyển</div>
+                            </li>
+                        </ul>
+                        <div class="header-mobile__filter-more">
+                            Hiển thị nhiều hơn
+                            <i class="fas fa-chevron-down category-sort__more-icon"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-mobile__footer">
+                <button class="header-mobile__btn header-mobile__btn--orange btn">Thiết lập lại</button>
+                <button class="header-mobile__btn btn btn--primary">Áp dụng</button>
             </div>
         </div>
-    </div>         
-
 
         <div class="app__container">
             <div class="grid wide">

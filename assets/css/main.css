@@ -1019,27 +1019,31 @@ i.header-search__logo-icon {
 }
 
 /* Header more icon mobile */
-.header-mobile__-more {
+.header-mobile__more {
   padding: 12px;
 }
 
-i.header-mobile__-more-icon {
-  font-size: 1.6rem;
+i.header-mobile__more-icon {
+  display: none;
+  font-size: 2rem;
   color: var(--primary-color);
 }
 
 .header-mobile__overlay {
   display: none;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   z-index: 12;
   background-color: rgba(0, 0, 0, 0.3);
+  animation: opacityIncrease 0.3s ease-out;
 }
 
 .header-mobile__category {
+  display: flex;
+  flex-direction: column;
   position: fixed;
   top: 0;
   right: 0;
@@ -1048,24 +1052,78 @@ i.header-mobile__-more-icon {
   width: 68%;
   height: 100vh;
   background: var(--white-color);
+  transform: translateX(100%);
+  transition: transform 0.3s ease-out;
+}
+
+.header-mobile__user {
+  display: flex;
+  align-items: center;
+  background-color: var(--primary-color);
+  padding: 8px 12px;
+}
+
+.header-mobile__user-avatar {
+  border-radius: 50%;
+  height: 4rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin-right: 16px;
+}
+
+.header-mobile__navigation-list {
+  padding: 16px 12px;
+  margin: 0;
+  list-style: none;
+}
+
+.header-mobile__navigation-item {
+  padding: 8px 0;
+}
+
+i.header-mobile__navigation-icon {
+  display: inline-block;
+  font-size: 1.6rem;
+  width: 20px;
+}
+
+.header-mobile__navigation-item {
+  color: var(--second-text-color);
+  font-size: 1.4rem;
+}
+
+.header-mobile__user-name p {
+  font-size: 1.2rem;
+  margin: 0;
+  padding: 2px 0;
+  color: var(--white-color);
+}
+
+.header-mobile__category-container {
+  overflow: auto;
+  flex: 1;
 }
 
 .header-mobile__heading {
+  position: relative;
   height: 44px;
   padding: 0 12px;
   background-color: #f5f5f5;
   line-height: 44px;
 }
 
-.header-mobile__heading h3{
+.header-mobile__heading h3 {
   margin: 0;
   font-size: 1.6rem;
   font-weight: 500;
   color: var(--text-color);
 }
 
+.header-mobile__filter-item:first-child .header-mobile__filter-heading::before {
+  border: none;
+}
+
 .header-mobile__filter-heading {
-  position: relative; 
+  position: relative;
   color: var(--text-color);
   font-size: 1.4rem;
   font-weight: 500;
@@ -1077,6 +1135,7 @@ i.header-mobile__-more-icon {
   list-style: none;
   padding: 0 12px;
   margin: 0;
+  padding-bottom: 16px;
 }
 
 .header-mobile__filter-heading::before {
@@ -1086,10 +1145,10 @@ i.header-mobile__-more-icon {
   top: -16px;
   left: 0;
   right: 0;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #e8e8e8;
 }
 
-.header-mobile__filter-value{
+.header-mobile__filter-value {
   padding: 10px 0;
   background-color: #f5f5f5;
   font-size: 1.2rem;
@@ -1102,9 +1161,54 @@ i.header-mobile__-more-icon {
 .header-mobile__filter-more {
   width: 100%;
   text-align: center;
-  padding: 10px 0;
+  padding: 0 0 16px;
   font-size: 1.2rem;
   color: var(--second-text-color);
+}
+
+.header-mobile__range-cross {
+  border-top: 1px solid #d8d8d8;
+  width: 16px;
+  margin: 0 4px;
+}
+
+.header-mobile__price-suggest {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 12px 16px;
+}
+
+.header-mobile__price-item {
+  background-color: #f5f5f5;
+  font-size: 1.2rem;
+  flex: 1;
+  padding: 10px 0;
+  text-align: center;
+  color: var(--text-color);
+}
+
+.header-mobile__price-item + .header-mobile__price-item {
+  margin-left: 8px;
+}
+
+.header-mobile__footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 8px 12px;
+  border-top: 1px solid #e8e8e8;
+}
+
+.header-mobile__btn {
+  min-width: 84px;
+  height: 36px;
+  margin-left: 8px;
+}
+
+.header-mobile__btn--orange {
+  color: var(--primary-color);
+  background-color: var(--white-color);
+  border: 1px solid var(--primary-color);
 }
 
 /* Header sort tablet mobile */
@@ -1417,6 +1521,7 @@ i.header-mobile__-more-icon {
   padding: 0 4px;
   outline: none;
   border: 1px solid #bdbdbd;
+  border-radius: 2px;
   color: var(--second-text-color);
 }
 

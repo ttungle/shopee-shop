@@ -112,6 +112,7 @@
 
   .header-search__box-input {
     background-color: #f2f2f2;
+    font-size: 1.4rem;
   }
 
   .header-search__history,
@@ -119,8 +120,40 @@
   .header-search__btn {
     display: none !important;
   }
-  
+
   .header-search__box-wrap::after {
     display: none;
+  }
+
+  i.header-mobile__more-icon {
+    display: block;
+  }
+
+  #header-mobile__checkbox:checked ~ .header-mobile__overlay {
+    display: block;
+  }
+
+  #header-mobile__checkbox:checked ~ .header-mobile__category {
+    transform: translateX(0);
+  }
+
+  .category__range {
+    background-color: #f5f5f5;
+    padding: 10px 10px;
+    margin: 12px 12px 0;
+    border-radius: 2px;
+  }
+
+  .category__range-cross {
+    font-size: 1.6rem;
+  }
+
+  .category__range-input {
+    border: none;
+    padding: 10px 3px;
+  }
+
+  .category__range-input::placeholder {
+    color: #c0c0c0;
   }
 }
