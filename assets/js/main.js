@@ -35,6 +35,7 @@ const categoryMainItems = $$(".category-item");
 const filterSelectInput = $$(".select-input__item");
 const filterSelectLabel = $(".select-input__label");
 const filterBtns = $$(".home-filter__btn");
+const mobileHeaderFilter = $$(".header-mobile__filter-value");
 
 const app = {
   handleEvents: function () {
@@ -258,9 +259,9 @@ const app = {
         navBarLogin.style.display = "inline-flex";
         navBarRegister.style.display = "inline-flex";
       };
-    };
+    }
 
-    //handle when clicking login btn 
+    //handle when clicking login btn
     authFormLoginBtn.onclick = function () {
       if (authFormUserNavItem.offsetParent == null) {
         navBarRegister.style.display = "none";
@@ -269,6 +270,20 @@ const app = {
         authFormUserNavItem.style.display = "inline-flex";
       }
     };
+
+    //handle when click category filter on tablet/mobile
+    Array.from(mobileHeaderFilter).forEach((e) => {
+      _this.resetHeaderFilterMobile();
+      e.onclick = function () {
+        e.classList.toggle("header-mobile__filter-value--active");
+      };
+    });
+  },
+
+  resetHeaderFilterMobile: function () {
+    Array.from(mobileHeaderFilter).forEach((e) => {
+      e.classList.remove("header-mobile__filter-value--active");
+    });
   },
 
   resetAuthForm: function () {
