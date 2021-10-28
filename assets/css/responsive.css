@@ -106,7 +106,7 @@
   }
 }
 
-/* Table */
+/* Tablet */
 @media (min-width: 46.25em) and (max-width: 63.9375em) {
   .hide-on-tablet {
     display: none;
@@ -119,6 +119,10 @@
 
   .header-mobile__category {
     width: 50%;
+  }
+
+  .mobile-category__link {
+    width: calc(100vw / 4.5);
   }
 
   .footer-warranty {
@@ -221,5 +225,64 @@
     --height: 28px;
     min-width: 36px;
     font-size: 1.6rem;
+  }
+
+  .footer-warranty {
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+
+  .footer__container {
+    padding: 0 16px;
+  }
+
+  .footer-right {
+    justify-content: center;
+  }
+
+  .footer-policy__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 20px 16px;
+  }
+
+  .footer-policy__item {
+    width: 50%;
+  }
+
+  .footer-policy__link {
+    display: block;
+    position: relative;
+    padding: 0;
+    border: none;
+    text-align: left;
+    font-size: 1rem;
+    line-height: 2.4rem;
+  }
+
+  .footer-policy__item:nth-of-type(2n + 1) .footer-policy__link::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10%;
+    height: 70%;
+    border-right: 1px solid #ccc;
+  }
+
+  .footer-policy__reward {
+    flex-wrap: wrap;
+  }
+
+  .footer-policy__reward-link {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .footer-policy__reward-item {
+    margin: 0;
   }
 }
